@@ -1,0 +1,41 @@
+-- ender dragon drops - Green blood "Dragon's Blood", black scale "Dragon's Scales"
+- crafts - Dragon's Blood (8, \) + Endstone (1, #) = Green Endstone "Magically Infused Endstone" - Infused - Eventually an "infuser" (crafting) block
+~ "\,\,\"   / ""
+~ "\,#,\"  /  "" INFUSER SIDE
+~ "\,\,\" /   ""
+- crafts - Dragon's Scales (7, \) + Eye of Ender (1, #) + Shulker Shell (1, /) = Eye Holder "Magical Frame" - Infused
+~ "\,#,\"   / ""
+~ "\,/,\"  /  "" INFUSER SIDE
+~ "\,\,\" /   ""
+- crafts - Dragon's Scales (3, \) + Dragon's Blood (2, #) + Enchanting table (1, /) + Experience Bottle (1, |) = "Infuser" ("_" = air)
+~ "_,/,_"
+~ "#,|,#"
+~ "\,\,\"
+- crafts - Endstone (5, \) + Magically Infused Endstone (3, #) + Magical Frame (1, /) = End Portal Frame
+~ "#,#,#"
+~ "\,/,\"
+~ "\,\,\"
+
+(could maybe create a new dimension aswell wit hthe Magical Frames, if you do like a:
+-Magically Infused Endstone (4,\) + Magical Frame (5, #) = Magical Portal Frame (same arrangement as end portal)
+~ "\,#,\"
+~ "#,#,#"
+~ "\,#,\"
+maybe what fills the portal is like Eye of Ender + Blaze Rod?
+possibly infused aswell who knows with like the blood or smth)
+
+-- Re-Add Enchanted golden apple crafts 
+- Diamond Block (3, \) + Gold Block (4, /) + Totem of Undying (1, #) + Apple (1, |) = Enchanted Golden Apple
+~ "/,#,/"
+~ "\,|,\"
+~ "/,\,/"
+
+-- Trident
+- End Rod (2, /) + Totem of Undying (1, #) = Trident Handle (| = air)
+~ "|,|,/"
+~ "|,#,|"
+~ "/,|,|"
+- Trident Handle (2, /) + Diamond Block (3, #) = Trident (| = air)
+~ "#,#,#"
+~ "|,/,|"
+~ "|,/,|"
