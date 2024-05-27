@@ -14,13 +14,13 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, XEM.MODID);
 
     public static final RegistryObject<Item> DRAGONBLOOD = ITEMS.register("dragonblood",
-            () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB)));
     public static final RegistryObject<Item> DRAGONSCALE = ITEMS.register("dragonscale",
-            () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB)));
     public static final RegistryObject<Item> MAGICENDSTONE = ITEMS.register("magicendstone",
-            () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB)));
     public static final RegistryObject<Item> MAGICFRAME = ITEMS.register("magicframe",
-            () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
