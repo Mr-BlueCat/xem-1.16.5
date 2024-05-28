@@ -1,5 +1,6 @@
 package com.x4mok.xem;
 
+import com.x4mok.xem.block.ModBlocks;
 import com.x4mok.xem.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -34,6 +35,7 @@ public class XEM {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading

@@ -3,6 +3,7 @@
 
   "item.xem.dragonblood": "Dragon's Blood",
   "item.xem.dragonscale": "Dragon's Scale",
-  "item.xem.magicendstone": "Magically Infused Endstone",
-  "item.xem.magicframe": "Magical Frame"
+  "item.xem.magicframe": "Magical Frame",
+
+  "block.xem.magicendstone": "Magically Infused End Stone"
 }
