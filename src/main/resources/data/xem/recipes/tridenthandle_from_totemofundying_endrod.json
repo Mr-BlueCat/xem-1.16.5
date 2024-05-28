@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "trident",
+  "pattern": [
+    "  #",
+    " / ",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:end_rod"
+    },
+    "/": {
+      "item": "minecraft:totem_of_undying"
+    }
+
+  },
+  "result": {
+    "item": "xem:tridenthandle",
+    "count": 1
+  }
+}

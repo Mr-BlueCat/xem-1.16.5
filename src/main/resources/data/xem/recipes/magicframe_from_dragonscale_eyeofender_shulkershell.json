@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "magicframe",
+  "pattern": [
+    "#\\#",
+    "#/#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "xem:dragonscale"
+    },
+    "/": {
+      "item": "minecraft:shulker_shell"
+    },
+    "\\": {
+      "item": "minecraft:ender_eye"
+    }
+
+  },
+  "result": {
+    "item": "xem:magicframe",
+    "count": 3
+  }
+}

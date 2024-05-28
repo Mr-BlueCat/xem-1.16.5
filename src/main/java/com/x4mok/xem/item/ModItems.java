@@ -17,8 +17,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB)));
     public static final RegistryObject<Item> DRAGONSCALE = ITEMS.register("dragonscale",
             () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB)));
-
     public static final RegistryObject<Item> MAGICFRAME = ITEMS.register("magicframe",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB)));
+    public static final RegistryObject<Item> TRIDENTHANDLE = ITEMS.register("tridenthandle",
             () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB)));
 
     public static void register(IEventBus eventBus) {
