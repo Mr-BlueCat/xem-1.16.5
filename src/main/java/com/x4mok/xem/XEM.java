@@ -1,6 +1,7 @@
 package com.x4mok.xem;
 
 import com.x4mok.xem.block.ModBlocks;
+import com.x4mok.xem.events.DragonDrops;
 import com.x4mok.xem.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -50,9 +51,7 @@ public class XEM {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        MinecraftForge.EVENT_BUS.register(DragonDrops.class);
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
