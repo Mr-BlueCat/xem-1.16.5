@@ -39,3 +39,12 @@ possibly infused aswell who knows with like the blood or smth)
 ~ "#,#,#"
 ~ "|,/,|"
 ~ "|,/,|"
+
+
+CREATE ITEM/BLOCK TEXTURES FOR:
+- Trident Handle (I)
+- Infuser (B)
+- Magic Portal Frame (B)
+
+-- need to make obtainment possible for all items aswell
+-- need to make crafts too
