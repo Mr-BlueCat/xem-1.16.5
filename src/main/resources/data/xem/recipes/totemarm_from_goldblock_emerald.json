@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "totem",
+  "pattern": [
+    "#",
+    "/",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_block"
+    },
+    "/": {
+      "item": "minecraft:emerald"
+    }
+
+  },
+  "result": {
+    "item": "xem:totemarm",
+    "count": 4
+  }
+}

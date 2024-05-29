@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "totem",
+  "pattern": [
+    " / ",
+    "|#|"
+  ],
+  "key": {
+    "#": {
+      "item": "xem:totemcore"
+    },
+    "/": {
+      "item": "xem:totemhead"
+    },
+    "|": {
+      "item": "xem:totemarm"
+    }
+
+  },
+  "result": {
+    "item": "minecraft:totem_of_undying",
+    "count": 1
+  }
+}

@@ -40,11 +40,25 @@ possibly infused aswell who knows with like the blood or smth)
 ~ "|,/,|"
 ~ "|,/,|"
 
+-- Totem of Undying
+- Diamond Block (4, #) + Netherite Ingot (5,/) = Totem's Core
+~ "/,#,/"
+~ "#,/,#"
+~ "/,#,/"
+- Gold Block (2, #) + Emerald (1,/) = Totem's Arm x2
+~ " ,#, "
+~ " ,/, "
+~ " ,#, "
+- Gold Block (4, #) + Obsidian (3,/) + Emerald (1, |) + Diamond (1,\) = Totem's Head
+~ "#,|,#"
+~ "#,\,#"
+~ "/,/,/"
+
 
 CREATE ITEM/BLOCK TEXTURES FOR:
-- Trident Handle (I)
+- Trident Handle (I) // DONE
 - Infuser (B)
 - Magic Portal Frame (B)
 
--- need to make obtainment possible for all items aswell
--- need to make crafts too
+-- need to make obtainment possible for all items aswell // DONE
+-- need to make crafts too // DONE
