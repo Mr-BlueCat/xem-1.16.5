@@ -66,7 +66,7 @@ public class DragonDrops {
 
                 System.out.println("got itemstacks");
 
-                int randomInt = ThreadLocalRandom.current().nextInt(1, 3 + 1);
+                int randomInt = ThreadLocalRandom.current().nextInt(3, 9 + 1);
 
                 for (int i = 1; i <= randomInt; i++) {
                     System.out.println("Iteration " + i);
@@ -74,7 +74,7 @@ public class DragonDrops {
                     System.out.println("DROPPED");
                 }
 
-                randomInt = ThreadLocalRandom.current().nextInt(1, 3 + 1);
+                randomInt = ThreadLocalRandom.current().nextInt(3, 9 + 1);
 
                 for (int i = 1; i <= randomInt; i++) {
                     System.out.println("Iteration " + i);
