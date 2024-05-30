@@ -53,6 +53,10 @@ possibly infused aswell who knows with like the blood or smth)
 ~ "#,|,#"
 ~ "#,\,#"
 ~ "/,/,/"
+- Totem's Core (1,#) + Totem's Arm (2,/) + Totem's Head (1, |) = Totem of Undying
+~ " ,|, "
+~ "/,#,/"
+~ " , , "
 
 
 CREATE ITEM/BLOCK TEXTURES FOR:

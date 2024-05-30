@@ -25,6 +25,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MAGICENDSTONE = registerBlock("magicendstone",
         () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
+    public static final RegistryObject<Block> INFUSER = registerBlock("infuser",
+            InfuserBlock::new);
 
     private static  <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

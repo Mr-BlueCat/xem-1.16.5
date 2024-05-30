@@ -27,6 +27,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(2)));
     public static final RegistryObject<Item> TOTEMARM = ITEMS.register("totemarm",
             () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(4)));
+    public static final RegistryObject<Item> TRUESCALE = ITEMS.register("truescale",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
