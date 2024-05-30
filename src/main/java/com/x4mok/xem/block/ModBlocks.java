@@ -1,11 +1,11 @@
 package com.x4mok.xem.block;
 
 import com.x4mok.xem.XEM;
+import com.x4mok.xem.block.custom.infuser.InfuserBlock;
 import com.x4mok.xem.item.ModItemGroup;
 import com.x4mok.xem.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -15,7 +15,6 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import java.rmi.registry.Registry;
 import java.util.function.Supplier;
 
 public class ModBlocks {
