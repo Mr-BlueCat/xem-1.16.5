@@ -35,6 +35,18 @@ public class ModTags {
 
         public static final Tags.IOptionalNamedTag<Item> FORGE_INGOT =
                 createForgeTag("ingots");
+
+        public static final Tags.IOptionalNamedTag<Item> DRAGONSCALE =
+                createTag("scales/dragon");
+
+        public static final Tags.IOptionalNamedTag<Item> FORGE_DRAGONSCALE =
+                createForgeTag("scales/dragon");
+
+        public static final Tags.IOptionalNamedTag<Item> SCALE =
+                createTag("scales");
+
+        public static final Tags.IOptionalNamedTag<Item> FORGE_SCALE =
+                createForgeTag("scales");
         private static Tags.IOptionalNamedTag<Item> createTag(String name) {
             return ItemTags.createOptional(new ResourceLocation(XEM.MODID, name));
         }

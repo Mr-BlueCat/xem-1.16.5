@@ -10,9 +10,32 @@
   "item.xem.totemarm": "Totem's Arm",
   "item.xem.truescale": "True Dragon's Scale",
   "item.xem.copperingot": "Copper Ingot",
+  "item.xem.coppersword": "Copper Sword",
+  "item.xem.copperaxe": "Copper Axe",
+  "item.xem.copperpickaxe": "Copper Pickaxe",
+  "item.xem.coppershovel": "Copper Shovel",
+  "item.xem.copperhoe": "Copper Hoe",
+  "item.xem.copperhelmet": "Copper Helmet",
+  "item.xem.copperchestplate": "Copper Chestplate",
+  "item.xem.copperleggings": "Copper Leggings",
+  "item.xem.copperboots": "Copper Boots",
+  "item.xem.dragonsword": "Dragon Scale Sword",
+  "item.xem.dragonaxe": "Dragon Scale Axe",
+  "item.xem.dragonpickaxe": "Dragon Scale Pickaxe",
+  "item.xem.dragonshovel": "Dragon Scale Shovel",
+  "item.xem.dragonhoe": "Dragon Scale Hoe",
+  "item.xem.dragonhelmet": "Dragon Scale Helmet",
+  "item.xem.dragonchestplate": "Dragon Scale Chestplate",
+  "item.xem.dragonleggings": "Dragon Scale Leggings",
+  "item.xem.dragonboots": "Dragon Scale Boots",
+  "item.xem.amulet": "Amulet",
+
 
   "block.xem.magicendstone": "Magically Infused End Stone",
   "block.xem.infuser": "Infuser",
   "block.xem.copperore": "Copper Ore",
-  "block.xem.copperblock": "Copper Block"
+  "block.xem.copperblock": "Copper Block",
+
+  "tooltip.xem.amulet": "Hold §6SHIFT§r to view this item's uses!",
+  "tooltip.xem.amulet_shift": "I wonder if this does something to end portal frames?"
 }

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "coppertools",
+  "pattern": [
+    " | ",
+    "/#/",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:end_portal_frame"
+    },
+    "/": {
+      "item": "minecraft:tnt"
+    },
+    "|": {
+      "item": "minecraft:string"
+    }
+  },
+
+  "result": {
+    "item": "xem:amulet"
+  }
+}
