@@ -9,8 +9,10 @@
   "item.xem.totemcore": "Totem's Core",
   "item.xem.totemarm": "Totem's Arm",
   "item.xem.truescale": "True Dragon's Scale",
+  "item.xem.copperingot": "Copper Ingot",
 
   "block.xem.magicendstone": "Magically Infused End Stone",
   "block.xem.infuser": "Infuser",
-  "block.xem.copperore": "Copper Ore"
+  "block.xem.copperore": "Copper Ore",
+  "block.xem.copperblock": "Copper Block"
 }

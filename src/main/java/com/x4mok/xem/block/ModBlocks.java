@@ -29,7 +29,8 @@ public class ModBlocks {
             InfuserBlock::new);
     public static final RegistryObject<Block> COPPERORE = registerBlock("copperore",
             () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
-
+    public static final RegistryObject<Block> COPPERBLOCK = registerBlock("copperblock",
+            () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
     private static  <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
 

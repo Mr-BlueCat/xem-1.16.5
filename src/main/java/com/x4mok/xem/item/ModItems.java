@@ -30,6 +30,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(4).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> TRUESCALE = ITEMS.register("truescale",
             () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> COPPERINGOT = ITEMS.register("copperingot",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.COMMON)));
     
 
 

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "copper",
+  "ingredients": [
+    {
+      "item": "xem:copperblock"
+    }
+  ],
+
+  "result": {
+    "item": "xem:copperingot",
+    "count": 9
+  }
+}

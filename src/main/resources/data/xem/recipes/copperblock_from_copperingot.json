@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "copper",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "xem:copperingot"
+    }
+
+  },
+  "result": {
+    "item": "xem:copperblock",
+    "count": 1
+  }
+}
