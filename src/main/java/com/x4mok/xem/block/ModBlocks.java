@@ -6,6 +6,7 @@ import com.x4mok.xem.item.ModItemGroup;
 import com.x4mok.xem.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -26,6 +27,8 @@ public class ModBlocks {
         () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
     public static final RegistryObject<Block> INFUSER = registerBlock("infuser",
             InfuserBlock::new);
+    public static final RegistryObject<Block> COPPERORE = registerBlock("copperore",
+            () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
 
     private static  <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
