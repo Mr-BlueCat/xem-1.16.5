@@ -57,7 +57,7 @@ public class EndPortalDestroyerAmulet extends Item {
 
     private void rightClickOnCertainBlockState(BlockState clickedBlock, ItemUseContext context,
                                                PlayerEntity playerEntity) {
-        ItemStack itemStack = new ItemStack(Items.END_PORTAL_FRAME);
+        ItemStack itemStack = new ItemStack(Items.END_PORTAL_FRAME, 2);
         World world = context.getLevel();
 
         if (blockIsValidToBreak(clickedBlock)) {
