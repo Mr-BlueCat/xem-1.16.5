@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "xem:block/grapes_stage0"
+    },
+    "age=1": {
+      "model": "xem:block/grapes_stage1"
+    },
+    "age=2": {
+      "model": "xem:block/grapes_stage2"
+    },
+    "age=3": {
+      "model": "xem:block/grapes_stage3"
+    },
+    "age=4": {
+      "model": "xem:block/grapes_stage4"
+    },
+    "age=5": {
+      "model": "xem:block/grapes_stage5"
+    },
+    "age=6": {
+      "model": "xem:block/grapes_stage6"
+    },
+    "age=7": {
+      "model": "xem:block/grapes_stage7"
+    }
+  }
+}

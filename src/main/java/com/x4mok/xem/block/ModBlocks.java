@@ -1,6 +1,7 @@
 package com.x4mok.xem.block;
 
 import com.x4mok.xem.XEM;
+import com.x4mok.xem.block.custom.GrapeBlock;
 import com.x4mok.xem.block.custom.infuser.InfuserBlock;
 import com.x4mok.xem.item.ModItemGroup;
 import com.x4mok.xem.item.ModItems;
@@ -50,7 +51,8 @@ public class ModBlocks {
             () -> new StairsBlock(Blocks.GOLD_BLOCK::defaultBlockState, AbstractBlock.Properties.of(Material.METAL).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> EMERALDSTAIRS = registerBlock("emeraldstairs",
             () -> new StairsBlock(Blocks.EMERALD_BLOCK::defaultBlockState, AbstractBlock.Properties.of(Material.METAL).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
-
+    public static final RegistryObject<Block> GRAPES = BLOCKS.register("grapes_crop",
+            () -> new GrapeBlock(AbstractBlock.Properties.copy(Blocks.WHEAT)));
 
 
     private static  <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {

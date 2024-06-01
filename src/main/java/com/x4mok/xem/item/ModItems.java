@@ -1,6 +1,7 @@
 package com.x4mok.xem.item;
 
 import com.x4mok.xem.XEM;
+import com.x4mok.xem.block.ModBlocks;
 import com.x4mok.xem.item.custom.EndPortalDestroyerAmulet;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -70,6 +71,8 @@ public class ModItems {
             () -> new ArmorItem(ModArmourMaterial.COPPER, EquipmentSlotType.LEGS, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
     public static final RegistryObject<Item> COPPERBOOTS = ITEMS.register("copperboots",
             () -> new ArmorItem(ModArmourMaterial.COPPER, EquipmentSlotType.FEET, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
+    public static final RegistryObject<Item> GRAPES = ITEMS.register("grapes",
+            () -> new BlockItem(ModBlocks.GRAPES.get(), (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON)).food(new Food.Builder().nutrition(1).saturationMod(1.0f).fast().build())));
 
 
 

@@ -4,6 +4,8 @@ import com.x4mok.xem.block.ModBlocks;
 import com.x4mok.xem.events.DragonDrops;
 import com.x4mok.xem.item.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -52,7 +54,7 @@ public class XEM {
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-
+        RenderTypeLookup.setRenderLayer(ModBlocks.GRAPES.get(), RenderType.cutout());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {

@@ -30,7 +30,6 @@
   "item.xem.dragonboots": "Dragon Scale Boots",
   "item.xem.amulet": "Amulet",
 
-
   "block.xem.magicendstone": "Magically Infused End Stone",
   "block.xem.infuser": "Infuser",
   "block.xem.copperore": "Copper Ore",
@@ -43,6 +42,7 @@
   "block.xem.redstonestairs": "Redstone Stairs",
   "block.xem.lapisstairs": "Lapis Stairs",
   "block.xem.goldstairs": "Gold Stairs",
+  "block.xem.grapes_crop": "Grapes",
 
   "tooltip.xem.amulet": "Hold §eSHIFT§r to see more Info!",
   "tooltip.xem.amulet_shift": "I wonder if this does something to end portal frames?"
