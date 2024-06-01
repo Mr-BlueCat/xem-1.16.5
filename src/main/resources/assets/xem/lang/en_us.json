@@ -35,7 +35,15 @@
   "block.xem.infuser": "Infuser",
   "block.xem.copperore": "Copper Ore",
   "block.xem.copperblock": "Copper Block",
+  "block.xem.copperstairs": "Copper Stairs",
+  "block.xem.ironstairs": "Iron Stairs",
+  "block.xem.diamondstairs": "Diamond Stairs",
+  "block.xem.netheritestairs": "Netherite Stairs",
+  "block.xem.coalstairs": "Coal Stairs",
+  "block.xem.redstonestairs": "Redstone Stairs",
+  "block.xem.lapisstairs": "Lapis Stairs",
+  "block.xem.goldstairs": "Gold Stairs",
 
-  "tooltip.xem.amulet": "Hold §6SHIFT§r to view this item's uses!",
+  "tooltip.xem.amulet": "Hold §eSHIFT§r to see more Info!",
   "tooltip.xem.amulet_shift": "I wonder if this does something to end portal frames?"
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "xem:block/copperblock",
+    "top": "xem:block/copperblock",
+    "side": "xem:block/copperblock"
+  }
+}

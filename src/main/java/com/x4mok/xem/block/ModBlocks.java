@@ -7,6 +7,7 @@ import com.x4mok.xem.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -30,7 +31,28 @@ public class ModBlocks {
     public static final RegistryObject<Block> COPPERORE = registerBlock("copperore",
             () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
     public static final RegistryObject<Block> COPPERBLOCK = registerBlock("copperblock",
-            () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
+            () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
+    public static final RegistryObject<Block> COPPERSTAIRS = registerBlock("copperstairs",
+            () -> new StairsBlock(() -> COPPERBLOCK.get().defaultBlockState(), AbstractBlock.Properties.of(Material.METAL).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> IRONSTAIRS = registerBlock("ironstairs",
+            () -> new StairsBlock(Blocks.IRON_BLOCK::defaultBlockState, AbstractBlock.Properties.of(Material.METAL).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIAMONDSTAIRS = registerBlock("diamondstairs",
+            () -> new StairsBlock(Blocks.DIAMOND_BLOCK::defaultBlockState, AbstractBlock.Properties.of(Material.METAL).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> NETHERITESTAIRS = registerBlock("netheritestairs",
+            () -> new StairsBlock(Blocks.NETHERITE_BLOCK::defaultBlockState, AbstractBlock.Properties.of(Material.METAL).harvestLevel(3).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> REDSTONESTAIRS = registerBlock("redstonestairs",
+            () -> new StairsBlock(Blocks.REDSTONE_BLOCK::defaultBlockState, AbstractBlock.Properties.of(Material.METAL).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LAPISSTAIRS = registerBlock("lapisstairs",
+            () -> new StairsBlock(Blocks.LAPIS_BLOCK::defaultBlockState, AbstractBlock.Properties.of(Material.METAL).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> COALSTAIRS = registerBlock("coalstairs",
+            () -> new StairsBlock(Blocks.COAL_BLOCK::defaultBlockState, AbstractBlock.Properties.of(Material.METAL).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> GOLDSTAIRS = registerBlock("goldstairs",
+            () -> new StairsBlock(Blocks.GOLD_BLOCK::defaultBlockState, AbstractBlock.Properties.of(Material.METAL).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> EMERALDSTAIRS = registerBlock("emeraldstairs",
+            () -> new StairsBlock(Blocks.EMERALD_BLOCK::defaultBlockState, AbstractBlock.Properties.of(Material.METAL).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
+
+
+
     private static  <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
 
