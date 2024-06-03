@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "xem:mahoganyplanks"
+        }
+    },
+    "result": {
+        "item": "xem:mahoganytrapdoor",
+        "count": 3
+    }
+} 
