@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mahogany",
+  "ingredients": [
+    {
+      "item": "xem:mahoganywood"
+    }
+  ],
+
+  "result": {
+    "item": "xem:mahoganyplanks",
+    "count": 4
+  }
+}

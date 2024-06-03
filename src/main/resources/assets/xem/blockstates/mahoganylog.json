@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "xem:block/mahoganyloghorizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "xem:block/mahoganylog"
+    },
+    "axis=z": {
+      "model": "xem:block/mahoganyloghorizontal",
+      "x": 90
+    }
+  }
+}

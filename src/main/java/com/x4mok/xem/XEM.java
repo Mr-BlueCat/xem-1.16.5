@@ -1,12 +1,15 @@
 package com.x4mok.xem;
 
+import com.google.common.collect.ImmutableMap;
 import com.x4mok.xem.block.ModBlocks;
 import com.x4mok.xem.events.DragonDrops;
 import com.x4mok.xem.item.ModItems;
+import jdk.nashorn.internal.ir.annotations.Immutable;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.inventory.container.ContainerType;
+import net.minecraft.item.AxeItem;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -51,10 +54,25 @@ public class XEM {
 
     private void setup(final FMLCommonSetupEvent event) {
         MinecraftForge.EVENT_BUS.register(DragonDrops.class);
+        event.enqueueWork(() -> {
+            AxeItem.STRIPABLES = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.STRIPABLES)
+                    .put(ModBlocks.MAHOGANYLOG.get(), ModBlocks.STRIPPEDMAHOGANYLOG.get())
+                    .put(ModBlocks.MAHOGANYWOOD.get(), ModBlocks.STRIPPEDMAHOGANYWOOD.get()).build();
+        });
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-        RenderTypeLookup.setRenderLayer(ModBlocks.GRAPES.get(), RenderType.cutout());
+        event.enqueueWork(() -> {
+            RenderTypeLookup.setRenderLayer(ModBlocks.MAHOGANYDOOR.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.MAHOGANYTRAPDOOR.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.MAHOGANYHIDDENDOOR.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.MAHOGANYHIDDENTRAPDOOR.get(), RenderType.cutout());
+
+            RenderTypeLookup.setRenderLayer(ModBlocks.GRAPES.get(), RenderType.cutout());
+
+            RenderTypeLookup.setRenderLayer(ModBlocks.MAHOGANYLEAVES.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.MAHOGANYSAPLING.get(), RenderType.cutout());
+        });
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {

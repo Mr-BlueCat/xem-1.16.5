@@ -50,7 +50,7 @@ public class EndPortalDestroyerAmulet extends Item {
         if(Screen.hasShiftDown()) {
             tooltip.add(new TranslationTextComponent("tooltip.xem.amulet_shift"));
         } else {
-            tooltip.add(new TranslationTextComponent("tooltip.xem.amulet"));
+            tooltip.add(new TranslationTextComponent("tooltip.xem.moreinfo"));
         }
         super.appendHoverText(stack, world, tooltip, flag);
     }

@@ -3,8 +3,7 @@
   "group": "dragonarmour",
   "pattern": [
     "# #",
-    "# #",
-    ""
+    "# #"
   ],
   "key": {
     "#": {

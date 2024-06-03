@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "xem:block/mahoganyslab"
+    },
+    "type=double": {
+      "model": "xem:block/mahoganyplanks"
+    },
+    "type=top": {
+      "model": "xem:block/mahoganyslab_top"
+    }
+  }
+}

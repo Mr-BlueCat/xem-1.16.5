@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "xem:block/mahoganyplanks",
+    "top": "xem:block/mahoganyplanks",
+    "side": "xem:block/mahoganyplanks"
+  }
+}

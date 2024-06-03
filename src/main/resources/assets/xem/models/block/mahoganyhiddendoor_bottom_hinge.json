@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_rh",
+  "textures": {
+    "top": "xem:block/mahoganyplanks",
+    "bottom": "xem:block/mahoganyplanks"
+  }
+}

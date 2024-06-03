@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "xem:block/mahoganypressureplate"
+    },
+    "powered=true": {
+      "model": "xem:block/mahoganypressureplate_down"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "xem:block/mahoganywood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "xem:block/mahoganywood"
+    },
+    "axis=z": {
+      "model": "xem:block/mahoganywood",
+      "x": 90
+    }
+  }
+}
