@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ghostlogs",
+  "ingredients": [
+    {
+      "item": "minecraft:spruce_log"
+    },
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "result": {
+    "item": "xem:ghostsprucelog",
+    "count": 2
+  }
+}

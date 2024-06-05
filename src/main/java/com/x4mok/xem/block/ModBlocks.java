@@ -3,6 +3,7 @@ package com.x4mok.xem.block;
 import com.x4mok.xem.XEM;
 import com.x4mok.xem.block.custom.GhostPillarBlock;
 import com.x4mok.xem.block.custom.GrapeBlock;
+import com.x4mok.xem.block.custom.HiddenOpenableBlocks;
 import com.x4mok.xem.block.custom.infuser.InfuserBlock;
 import com.x4mok.xem.block.custom.trees.MahoganyTree;
 import com.x4mok.xem.item.ModItemGroup;
@@ -78,21 +79,25 @@ public class ModBlocks {
             () -> new DoorBlock(AbstractBlock.Properties.copy(Blocks.OAK_DOOR).harvestTool(ToolType.AXE).noOcclusion()));
     public static final RegistryObject<Block> MAHOGANYTRAPDOOR = registerBlock("mahoganytrapdoor",
             () -> new TrapDoorBlock(AbstractBlock.Properties.copy(Blocks.OAK_TRAPDOOR).harvestTool(ToolType.AXE).noOcclusion()));
-    public static final RegistryObject<Block> MAHOGANYHIDDENDOOR = registerBlock("mahoganyhiddendoor",
+    public static final RegistryObject<Block> MAHOGANYHIDDENDOOR = BLOCKS.register("mahoganyhiddendoor",
             () -> new DoorBlock(AbstractBlock.Properties.copy(Blocks.OAK_PLANKS).harvestTool(ToolType.AXE)));
-    public static final RegistryObject<Block> MAHOGANYHIDDENTRAPDOOR = registerBlock("mahoganyhiddentrapdoor",
+    public static final RegistryObject<Block> MAHOGANYHIDDENTRAPDOOR = BLOCKS.register("mahoganyhiddentrapdoor",
             () -> new TrapDoorBlock(AbstractBlock.Properties.copy(Blocks.OAK_PLANKS).harvestTool(ToolType.AXE)));
+    public static final RegistryObject<Item> MAHOGANYHIDDENDOORITEM = ModItems.ITEMS.register("mahoganyhiddendoor",
+            () -> new HiddenOpenableBlocks(MAHOGANYHIDDENDOOR.get(), new Item.Properties().tab(ModItemGroup.XEMTAB)));
+    public static final RegistryObject<Item> MAHOGANYHIDDENTRAPDOORITEM = ModItems.ITEMS.register("mahoganyhiddentrapdoor",
+            () -> new HiddenOpenableBlocks(MAHOGANYHIDDENTRAPDOOR.get(), new Item.Properties().tab(ModItemGroup.XEMTAB)));
     public static final RegistryObject<Block> GHOSTOAKLOG = BLOCKS.register("ghostoaklog",
             () -> new RotatedPillarBlock(AbstractBlock.Properties.copy(Blocks.OAK_LOG).harvestTool(ToolType.AXE).noCollission()));
-    public static final RegistryObject<Item> GHOSTOAKLOGITEM = ModItems.ITEMS.register("ghostoakblock",
+    public static final RegistryObject<Item> GHOSTOAKLOGITEM = ModItems.ITEMS.register("ghostoaklog",
             () -> new GhostPillarBlock(GHOSTOAKLOG.get(), new Item.Properties().tab(ModItemGroup.XEMTAB)));
     public static final RegistryObject<Block> GHOSTSPRUCELOG = BLOCKS.register("ghostsprucelog",
             () -> new RotatedPillarBlock(AbstractBlock.Properties.copy(Blocks.OAK_LOG).harvestTool(ToolType.AXE).noCollission()));
-    public static final RegistryObject<Item> GHOSTSPRUCELOGITEM = ModItems.ITEMS.register("ghostspruceblock",
+    public static final RegistryObject<Item> GHOSTSPRUCELOGITEM = ModItems.ITEMS.register("ghostsprucelog",
             () -> new GhostPillarBlock(GHOSTSPRUCELOG.get(), new Item.Properties().tab(ModItemGroup.XEMTAB)));
     public static final RegistryObject<Block> GHOSTDARKOAKLOG = BLOCKS.register("ghostdarkoaklog",
             () -> new RotatedPillarBlock(AbstractBlock.Properties.copy(Blocks.OAK_LOG).harvestTool(ToolType.AXE).noCollission()));
-    public static final RegistryObject<Item> GHOSTDARKOAKLOGITEM = ModItems.ITEMS.register("ghostdarkoakblock",
+    public static final RegistryObject<Item> GHOSTDARKOAKLOGITEM = ModItems.ITEMS.register("ghostdarkoaklog",
             () -> new GhostPillarBlock(GHOSTDARKOAKLOG.get(), new Item.Properties().tab(ModItemGroup.XEMTAB)));
     public static final RegistryObject<Block> MAHOGANYLEAVES = registerBlock("mahoganyleaves",
             () -> new LeavesBlock(AbstractBlock.Properties.of(Material.LEAVES).harvestTool(ToolType.HOE).strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()));
