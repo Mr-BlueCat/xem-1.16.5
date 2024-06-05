@@ -3,6 +3,7 @@ package com.x4mok.xem.world.gen;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.World;
+import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
@@ -21,7 +22,13 @@ public class ModOreGeneration {
             ConfiguredPlacement<TopSolidRangeConfig> configuredPlacement = Placement.RANGE.configured(
                     new TopSolidRangeConfig(ore.getMinHeight(), ore.getMinHeight(), ore.getMaxHeight()));
 
-            
+
+            ConfiguredFeature<?,?> oreFeature = registerOreFeature(ore, oreFeatureConfig, configuredPlacement);
+
+            //you can add if statements cause in biome thingy
+
+            event.getGeneration().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, oreFeature);
+
         }
     }
 
