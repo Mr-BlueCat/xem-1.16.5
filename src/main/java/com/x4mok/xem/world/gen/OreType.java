@@ -6,7 +6,8 @@ import net.minecraftforge.common.util.Lazy;
 
 public enum OreType {
 
-    COPPER(Lazy.of(ModBlocks.COPPERORE), 8, 25, 50);
+    COPPER(Lazy.of(ModBlocks.COPPERORE), 8, 25, 50),
+    DIVINE(Lazy.of(ModBlocks.DIVINEORE), 12, 0, 100);
 
     private final Lazy<Block> block;
     private final int maxVeinSize;

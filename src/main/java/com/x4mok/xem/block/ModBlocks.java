@@ -103,7 +103,12 @@ public class ModBlocks {
             () -> new LeavesBlock(AbstractBlock.Properties.of(Material.LEAVES).harvestTool(ToolType.HOE).strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion()));
     public static final RegistryObject<Block> MAHOGANYSAPLING = registerBlock("mahoganysapling",
             () -> new SaplingBlock(new MahoganyTree(),AbstractBlock.Properties.copy(Blocks.OAK_SAPLING)));
-
+    public static final RegistryObject<Block> DIVINEORE = registerBlock("divineore",
+            () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestLevel(5).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
+    public static final RegistryObject<Block> DIVINEBLOCK = registerBlock("divineblock",
+            () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestLevel(5).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
+    public static final RegistryObject<Block> DIVINESTAIRS = registerBlock("divinestairs",
+            () -> new StairsBlock(() -> DIVINEBLOCK.get().defaultBlockState(), AbstractBlock.Properties.of(Material.METAL).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
 
 
     private static  <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {

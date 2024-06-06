@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "xem:block/divineblock",
+    "top": "xem:block/divineblock",
+    "side": "xem:block/divineblock"
+  }
+}

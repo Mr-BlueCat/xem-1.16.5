@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "divine",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "xem:divineingot"
+    }
+  },
+
+  "result": {
+    "item": "xem:divineblock"
+  }
+}

@@ -29,6 +29,7 @@
   "item.xem.dragonleggings": "Dragon Scale Leggings",
   "item.xem.dragonboots": "Dragon Scale Boots",
   "item.xem.amulet": "Amulet",
+  "item.xem.divineingot": "Divine Ingot",
 
   "block.xem.magicendstone": "Magically Infused End Stone",
   "block.xem.infuser": "Infuser",
@@ -62,6 +63,9 @@
   "block.xem.ghostsprucelog": "Spruce Log",
   "block.xem.mahoganysapling": "Mahogany Sapling",
   "block.xem.mahoganyleaves": "Mahogany Leaves",
+  "block.xem.divineore": "Divine Ore",
+  "block.xem.divineblock": "Divine Block",
+  "block.xem.divinestairs": "Divine Stairs",
 
   "tooltip.xem.moreinfo": "Hold §eSHIFT§r to see more Info!",
   "tooltip.xem.amulet_shift": "I wonder if this does something to end portal frames?",

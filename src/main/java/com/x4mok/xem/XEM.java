@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableMap;
 import com.x4mok.xem.block.ModBlocks;
 import com.x4mok.xem.events.DragonDrops;
 import com.x4mok.xem.item.ModItems;
+import com.x4mok.xem.tileentity.ModTileEntities;
 import jdk.nashorn.internal.ir.annotations.Immutable;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderType;
@@ -39,6 +40,7 @@ public class XEM {
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModTileEntities.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading

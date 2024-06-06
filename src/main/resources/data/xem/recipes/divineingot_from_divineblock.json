@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "divine",
+  "ingredients": [
+    {
+      "item": "xem:divineblock"
+    }
+  ],
+
+  "result": {
+    "item": "xem:divineingot",
+    "count": 9
+  }
+}
