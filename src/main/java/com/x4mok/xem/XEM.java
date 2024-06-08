@@ -2,11 +2,14 @@ package com.x4mok.xem;
 
 import com.google.common.collect.ImmutableMap;
 import com.x4mok.xem.block.ModBlocks;
+import com.x4mok.xem.container.ModContainers;
 import com.x4mok.xem.events.DragonDrops;
 import com.x4mok.xem.item.ModItems;
+import com.x4mok.xem.screen.InfuserScreen;
 import com.x4mok.xem.tileentity.ModTileEntities;
 import jdk.nashorn.internal.ir.annotations.Immutable;
 import net.minecraft.block.Block;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.inventory.container.ContainerType;
@@ -41,6 +44,7 @@ public class XEM {
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModTileEntities.register(eventBus);
+        ModContainers.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -74,6 +78,8 @@ public class XEM {
 
             RenderTypeLookup.setRenderLayer(ModBlocks.MAHOGANYLEAVES.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.MAHOGANYSAPLING.get(), RenderType.cutout());
+
+            ScreenManager.register(ModContainers.INFUSER_CONTAINER.get(), InfuserScreen::new);
         });
     }
 

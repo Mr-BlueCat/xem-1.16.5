@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "xem:dragonhelmet",
+    "xem:dragonchestplate",
+    "xem:dragonleggings",
+    "xem:dragonboots",
+    "xem:dragonsword",
+    "xem:dragonaxe",
+    "xem:dragonpickaxe",
+    "xem:dragonshovel",
+    "xem:dragonhoe",
+    "minecraft:end_stone",
+    "minecraft:shulker_shell"
+  ]
+}

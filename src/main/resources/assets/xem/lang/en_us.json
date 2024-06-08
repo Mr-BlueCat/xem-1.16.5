@@ -70,5 +70,7 @@
   "tooltip.xem.moreinfo": "Hold §eSHIFT§r to see more Info!",
   "tooltip.xem.amulet_shift": "I wonder if this does something to end portal frames?",
   "tooltip.xem.hiddenblock": "This block will blend in with other blocks",
-  "tooltip.xem.ghostblock": "You can walk through this block when its placed down"
+  "tooltip.xem.ghostblock": "You can walk through this block when its placed down",
+
+  "screen.xem.infuser": "Infuser"
 }

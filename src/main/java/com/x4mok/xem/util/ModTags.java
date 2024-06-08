@@ -30,6 +30,12 @@ public class ModTags {
         public static final Tags.IOptionalNamedTag<Item> FORGE_COPPER =
                 createForgeTag("ingots/copper");
 
+        public static final Tags.IOptionalNamedTag<Item> DIVINE =
+                createTag("ingots/divine");
+
+        public static final Tags.IOptionalNamedTag<Item> FORGE_DIVINE =
+                createForgeTag("ingots/divine");
+
         public static final Tags.IOptionalNamedTag<Item> INGOT =
                 createTag("ingots");
 
