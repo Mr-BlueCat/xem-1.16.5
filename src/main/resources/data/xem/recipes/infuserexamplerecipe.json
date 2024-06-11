@@ -1,0 +1,22 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "minecraft:end_stone"
+    },
+    {
+      "item": "xem:dragonblood"
+    },
+    {
+      "item": "xem:dragonblood"
+    },
+    {
+      "item": "xem:dragonblood"
+    }
+  ],
+
+  "output": {
+    "item": "xem:magicendstone",
+    "amount": 3
+  }
+}

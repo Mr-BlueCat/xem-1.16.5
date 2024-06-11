@@ -3,6 +3,7 @@ package com.x4mok.xem;
 import com.google.common.collect.ImmutableMap;
 import com.x4mok.xem.block.ModBlocks;
 import com.x4mok.xem.container.ModContainers;
+import com.x4mok.xem.data.recipes.ModRecipeTypes;
 import com.x4mok.xem.events.DragonDrops;
 import com.x4mok.xem.item.ModItems;
 import com.x4mok.xem.screen.InfuserScreen;
@@ -45,6 +46,7 @@ public class XEM {
         ModBlocks.register(eventBus);
         ModTileEntities.register(eventBus);
         ModContainers.register(eventBus);
+        ModRecipeTypes.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading

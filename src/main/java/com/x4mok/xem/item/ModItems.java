@@ -16,13 +16,13 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, XEM.MODID);
 
     public static final RegistryObject<Item> DRAGONBLOOD = ITEMS.register("dragonblood",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(16).rarity(Rarity.UNCOMMON)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> DRAGONSCALE = ITEMS.register("dragonscale",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(16).rarity(Rarity.UNCOMMON)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> MAGICFRAME = ITEMS.register("magicframe",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(16).rarity(Rarity.RARE)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.RARE)));
     public static final RegistryObject<Item> TRIDENTHANDLE = ITEMS.register("tridenthandle",
-            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(16).rarity(Rarity.RARE)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.RARE)));
     public static final RegistryObject<Item> TOTEMHEAD = ITEMS.register("totemhead",
             () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(2).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> TOTEMCORE = ITEMS.register("totemcore",

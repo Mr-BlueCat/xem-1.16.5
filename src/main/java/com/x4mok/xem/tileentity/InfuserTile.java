@@ -1,12 +1,18 @@
 package com.x4mok.xem.tileentity;
 
+import com.x4mok.xem.data.recipes.InfuserRecipe;
+import com.x4mok.xem.data.recipes.ModRecipeTypes;
 import com.x4mok.xem.item.ModItems;
 import net.minecraft.block.BlockState;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.Direction;
+import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -14,11 +20,13 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.inventory.Inventory;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.util.Optional;
 
-public class InfuserTile extends TileEntity {
+public class InfuserTile extends TileEntity implements ITickableTileEntity{
 
     private final ItemStackHandler itemHandler = createHandler();
     private final LazyOptional<IItemHandler> handler = LazyOptional.of(() -> itemHandler);
@@ -50,6 +58,10 @@ public class InfuserTile extends TileEntity {
         return stack.getItem().is(ItemTags.createOptional(new ResourceLocation("xem", "infusablematerials")));
     }
 
+    public boolean isInfusingResult(ItemStack stack) {
+        return stack.getItem().is(ItemTags.createOptional(new ResourceLocation("xem", "infusingresults")));
+    }
+
 
     private ItemStackHandler createHandler() {
         return new ItemStackHandler(6) {
@@ -67,8 +79,8 @@ public class InfuserTile extends TileEntity {
                     case 3:
                     case 4:
                         return isInfusingMaterial(stack);
-                    case 5: return false;
-                    //case 2: return stack.getItem() ==
+                    case 5:
+                        return isInfusingResult(stack);
                     default:
                         return false;
                 }
@@ -101,8 +113,52 @@ public class InfuserTile extends TileEntity {
         return super.getCapability(cap, side);
     }
 
+    public void craft() {
+        Inventory inv = new Inventory(itemHandler.getSlots());
+        for (int i = 0; i < itemHandler.getSlots(); i++) {
+            inv.setItem(i, itemHandler.getStackInSlot(i));
+        }
 
+        Optional<InfuserRecipe> recipe = level.getRecipeManager()
+                .getRecipeFor(ModRecipeTypes.INFUSER_RECIPE, inv, level);
 
+        recipe.ifPresent(iRecipe -> {
+            ItemStack output = iRecipe.getResultItem();
+            if (itemHandler.getStackInSlot(5) != ItemStack.EMPTY) {
+                if (itemHandler.getStackInSlot(5).getItem() == output.getStack().getItem() && itemHandler.getStackInSlot(5).getCount() <= 63) {
+                    int amount = iRecipe.getAmount();
 
+                    craftTheItem(output, amount);
 
+                    setChanged();
+                }
+            } else {
+                int amount = iRecipe.getAmount();
+
+                craftTheItem(output, amount);
+
+                setChanged();
+            }
+
+        });
+    }
+
+    private void craftTheItem(ItemStack output, int amount) {
+        itemHandler.extractItem(0, 1, false);
+        itemHandler.extractItem(1, 1, false);
+        itemHandler.extractItem(2, 1, false);
+        itemHandler.extractItem(3, 1, false);
+        itemHandler.extractItem(4, 1, false);
+        System.out.println(output);
+        itemHandler.insertItem(5, output, false);
+    }
+
+    @Override
+    public void tick() {
+        if(level.isClientSide) {
+            return;
+        }
+
+        craft();
+    }
 }
