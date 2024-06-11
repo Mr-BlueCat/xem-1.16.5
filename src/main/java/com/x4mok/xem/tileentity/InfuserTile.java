@@ -149,7 +149,6 @@ public class InfuserTile extends TileEntity implements ITickableTileEntity{
         itemHandler.extractItem(2, 1, false);
         itemHandler.extractItem(3, 1, false);
         itemHandler.extractItem(4, 1, false);
-        System.out.println(output);
         itemHandler.insertItem(5, output, false);
     }
 

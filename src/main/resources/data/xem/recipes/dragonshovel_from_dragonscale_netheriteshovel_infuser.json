@@ -1,0 +1,25 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_shovel"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    }
+  ],
+
+  "output": {
+    "item": "xem:dragonshovel",
+    "amount": 1
+  }
+}

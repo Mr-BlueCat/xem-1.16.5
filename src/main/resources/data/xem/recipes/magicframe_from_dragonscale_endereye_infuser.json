@@ -1,0 +1,25 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "minecraft:end_stone"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "minecraft:ender_eye"
+    }
+  ],
+
+  "output": {
+    "item": "xem:magicframe",
+    "amount": 3
+  }
+}

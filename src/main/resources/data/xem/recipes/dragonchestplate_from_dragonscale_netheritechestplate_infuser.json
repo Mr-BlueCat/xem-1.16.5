@@ -1,0 +1,25 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_chestplate"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    }
+  ],
+
+  "output": {
+    "item": "xem:dragonchestplate",
+    "amount": 1
+  }
+}

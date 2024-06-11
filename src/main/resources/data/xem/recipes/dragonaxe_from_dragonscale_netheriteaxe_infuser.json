@@ -1,0 +1,25 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_axe"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    }
+  ],
+
+  "output": {
+    "item": "xem:dragonaxe",
+    "amount": 1
+  }
+}

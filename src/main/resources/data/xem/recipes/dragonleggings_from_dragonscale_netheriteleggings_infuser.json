@@ -1,0 +1,25 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_leggings"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    },
+    {
+      "item": "xem:dragonscale"
+    }
+  ],
+
+  "output": {
+    "item": "xem:dragonleggings",
+    "amount": 1
+  }
+}
