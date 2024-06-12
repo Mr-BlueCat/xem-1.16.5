@@ -1,12 +1,12 @@
 -- ender dragon drops - Green blood "Dragon's Blood", black scale "Dragon's Scales"
 - crafts - Dragon's Blood (8, \) + Endstone (1, #) = Green Endstone "Magically Infused Endstone" - Infused - Eventually an "infuser" (crafting) block
-~ "\,\,\"   / ""
-~ "\,#,\"  /  "" INFUSER SIDE
-~ "\,\,\" /   ""
+~ "\,\,\"   /
+~ "\,#,\"  /  "Endstone + 3 Dragon's Blood = 1 Magically Infused Endstone (until amount bug can be fixed, then its 3)" INFUSER SIDE
+~ "\,\,\" /
 - crafts - Dragon's Scales (7, \) + Eye of Ender (1, #) + Shulker Shell (1, /) = Eye Holder "Magical Frame" - Infused
-~ "\,#,\"   / ""
-~ "\,/,\"  /  "" INFUSER SIDE
-~ "\,\,\" /   ""
+~ "\,#,\"   /
+~ "\,/,\"  /  "Shulker Shell + Eye of Ender + 3 Dragon Scales = 1 Magical Frame (to be 3)" INFUSER SIDE
+~ "\,\,\" /
 - crafts - Dragon's Scales (3, \) + Dragon's Blood (2, #) + Enchanting table (1, /) + Experience Bottle (1, |) = "Infuser" ("_" = air)
 ~ "_,/,_"
 ~ "#,|,#"

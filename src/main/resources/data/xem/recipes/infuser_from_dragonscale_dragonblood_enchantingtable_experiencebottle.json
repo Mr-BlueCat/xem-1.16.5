@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "orestairs",
+  "pattern": [
+    " a ",
+    "beb",
+    "sss"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:experience_bottle"
+    },
+    "b": {
+      "item": "xem:dragonblood"
+    },
+    "e": {
+      "item": "minecraft:enchanting_table"
+    },
+    "s": {
+      "tag": "forge:scales/dragon"
+    }
+  },
+
+  "result": {
+    "item": "xem:infuser"
+  }
+}
