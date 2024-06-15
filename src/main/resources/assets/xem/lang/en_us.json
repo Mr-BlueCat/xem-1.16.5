@@ -31,6 +31,9 @@
   "item.xem.amulet": "Amulet",
   "item.xem.divineingot": "Divine Ingot",
   "item.xem.divinehelmet": "Divine Helmet",
+  "item.xem.divinechestplate": "Divine Chestplate",
+  "item.xem.divineleggings": "Divine Leggings",
+  "item.xem.divineboots": "Divine Boots",
 
   "block.xem.magicendstone": "Magically Infused End Stone",
   "block.xem.infuser": "Infuser",
