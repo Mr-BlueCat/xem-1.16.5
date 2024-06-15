@@ -1,0 +1,4 @@
+* = is going to be added for the version
+- Biome +0.0.2 per biome - Mahogany Forest (more trees)*, Mahogany Open Forest (less trees)
+- Structures +0.0.1 per structure - Wizard Tower (books, enchanting tables, diamonds), Treehouse (Small base with secret underneath)*, Hidden underground vault (diamonds and other resources), Hidden underground bunker (Small base marked by a rock)*, Ancient farm (Small farm with crops like grapes growing)*, Fishing Dock (Boats in chests and fishing rods)
+- Advancements +0.0.1 per advancement - Getting full dragon (name: "Armour of the ancients", description: "What have you done...")*, Getting full divine (name: "True purity", description: "No gods were harmed in the making of this armour")*
