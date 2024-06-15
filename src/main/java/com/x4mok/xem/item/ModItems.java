@@ -75,7 +75,14 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.GRAPES.get(), (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON)).food(new Food.Builder().nutrition(1).saturationMod(1.0f).fast().build())));
     public static final RegistryObject<Item> DIVINEINGOT = ITEMS.register("divineingot",
             () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.COMMON)));
-
+    public static final RegistryObject<Item> DIVINEHELMET = ITEMS.register("divinehelmet",
+            () -> new ArmorItem(ModArmourMaterial.DIVINE, EquipmentSlotType.HEAD, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> DIVINECHESTPLATE = ITEMS.register("divinechestplate",
+            () -> new ArmorItem(ModArmourMaterial.DIVINE, EquipmentSlotType.CHEST, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> DIVINELEGGINGS = ITEMS.register("divineleggings",
+            () -> new ArmorItem(ModArmourMaterial.DIVINE, EquipmentSlotType.LEGS, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> DIVINEBOOTS = ITEMS.register("divineboots",
+            () -> new ArmorItem(ModArmourMaterial.DIVINE, EquipmentSlotType.FEET, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
 
 
     public static void register(IEventBus eventBus) {

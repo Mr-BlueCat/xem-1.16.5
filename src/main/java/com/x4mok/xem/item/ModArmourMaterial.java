@@ -3,7 +3,6 @@ package com.x4mok.xem.item;
 import com.x4mok.xem.XEM;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 import net.minecraft.util.SoundEvent;
@@ -15,11 +14,14 @@ import java.util.function.Supplier;
 
 public enum ModArmourMaterial implements IArmorMaterial {
 
-    DRAGON("dragon", 45, new int[]{4, 7, 9, 5}, 16, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.7F, () -> {
+    DRAGON("dragon", 45, new int[]{4, 7, 9, 5}, 16, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.3F, () -> {
         return Ingredient.of(ModItems.DRAGONSCALE.get());
     }),
     COPPER("copper", 15, new int[]{3, 5, 5, 3}, 10, SoundEvents.ARMOR_EQUIP_IRON, 0.5F, 0.0F, () -> {
         return Ingredient.of(ModItems.COPPERINGOT.get());
+    }),
+    DIVINE("divine", 60, new int[]{6,8,9,6}, 32, SoundEvents.ARMOR_EQUIP_TURTLE, 5.5F, 0.5F, () -> {
+        return Ingredient.of(ModItems.DIVINEINGOT.get());
     });
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;
