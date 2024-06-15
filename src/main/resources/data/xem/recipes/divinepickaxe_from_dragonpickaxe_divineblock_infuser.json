@@ -1,0 +1,22 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "xem:dragonpickaxe"
+    },
+    {
+      "item": "xem:divineblock"
+    },
+    {
+      "item": "xem:divineblock"
+    },
+    {
+      "item": "xem:divineblock"
+    }
+  ],
+
+  "output": {
+    "item": "xem:divinepickaxe",
+    "amount": 1
+  }
+}

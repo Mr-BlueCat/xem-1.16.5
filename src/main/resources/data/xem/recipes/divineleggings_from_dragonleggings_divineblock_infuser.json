@@ -1,0 +1,22 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "xem:dragonleggings"
+    },
+    {
+      "item": "xem:divineblock"
+    },
+    {
+      "item": "xem:divineblock"
+    },
+    {
+      "item": "xem:divineblock"
+    }
+  ],
+
+  "output": {
+    "item": "xem:divineleggings",
+    "amount": 1
+  }
+}

@@ -3,8 +3,8 @@
   "values": [
     "xem:dragonblood",
     "xem:dragonscale",
-    "xem:divineingot",
     "minecraft:ender_eye",
-    "xem:truescale"
+    "xem:truescale",
+    "xem:divineblock"
   ]
 }

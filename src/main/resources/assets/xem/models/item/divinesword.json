@@ -1,0 +1,6 @@
+{
+	"parent": "xem:custom_model/item/divinesword",
+	"textures": {
+		"layer0": "xem:item/divinesword"
+	}
+}

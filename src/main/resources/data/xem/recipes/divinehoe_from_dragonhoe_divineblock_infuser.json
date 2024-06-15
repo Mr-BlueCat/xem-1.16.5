@@ -1,0 +1,22 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "xem:dragonhoe"
+    },
+    {
+      "item": "xem:divineblock"
+    },
+    {
+      "item": "xem:divineblock"
+    },
+    {
+      "item": "xem:divineblock"
+    }
+  ],
+
+  "output": {
+    "item": "xem:divinehoe",
+    "amount": 1
+  }
+}

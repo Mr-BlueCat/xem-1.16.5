@@ -1,0 +1,22 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "xem:dragonsword"
+    },
+    {
+      "item": "xem:divineblock"
+    },
+    {
+      "item": "xem:divineblock"
+    },
+    {
+      "item": "xem:divineblock"
+    }
+  ],
+
+  "output": {
+    "item": "xem:divinesword",
+    "amount": 1
+  }
+}

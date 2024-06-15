@@ -83,6 +83,16 @@ public class ModItems {
             () -> new ArmorItem(ModArmourMaterial.DIVINE, EquipmentSlotType.LEGS, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
     public static final RegistryObject<Item> DIVINEBOOTS = ITEMS.register("divineboots",
             () -> new ArmorItem(ModArmourMaterial.DIVINE, EquipmentSlotType.FEET, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> DIVINESWORD = ITEMS.register("divinesword",
+            () -> new SwordItem(ModItemTier.DIVINE, 3, -2.4F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> DIVINEAXE = ITEMS.register("divineaxe",
+            () -> new AxeItem(ModItemTier.DIVINE, 6.5f, -3.0F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> DIVINEPICKAXE = ITEMS.register("divinepickaxe",
+            () -> new PickaxeItem(ModItemTier.DIVINE, 1, -2.8F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> DIVINESHOVEL = ITEMS.register("divineshovel",
+            () -> new ShovelItem(ModItemTier.DIVINE, 1.5f, -3.0F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> DIVINEHOE = ITEMS.register("divinehoe",
+            () -> new HoeItem(ModItemTier.DIVINE, 0, -2.0F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
 
 
     public static void register(IEventBus eventBus) {

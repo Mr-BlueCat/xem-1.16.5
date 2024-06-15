@@ -138,8 +138,7 @@ public class InfuserRecipe implements IInfuserRecipe{
                 }
             }
         }
-        // result
-        System.out.println(item1Has && item2Has && item3Has && item4Has);
+        // Result
         return item1Has && item2Has && item3Has && item4Has;
     }
 
