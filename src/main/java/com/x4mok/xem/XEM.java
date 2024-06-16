@@ -8,6 +8,7 @@ import com.x4mok.xem.events.DragonDrops;
 import com.x4mok.xem.item.ModItems;
 import com.x4mok.xem.screen.InfuserScreen;
 import com.x4mok.xem.tileentity.ModTileEntities;
+import com.x4mok.xem.world.structure.ModStructures;
 import jdk.nashorn.internal.ir.annotations.Immutable;
 import net.minecraft.block.Block;
 import net.minecraft.client.gui.ScreenManager;
@@ -47,6 +48,7 @@ public class XEM {
         ModTileEntities.register(eventBus);
         ModContainers.register(eventBus);
         ModRecipeTypes.register(eventBus);
+        ModStructures.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -66,6 +68,8 @@ public class XEM {
             AxeItem.STRIPABLES = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.STRIPABLES)
                     .put(ModBlocks.MAHOGANYLOG.get(), ModBlocks.STRIPPEDMAHOGANYLOG.get())
                     .put(ModBlocks.MAHOGANYWOOD.get(), ModBlocks.STRIPPEDMAHOGANYWOOD.get()).build();
+
+            ModStructures.setupStructures();
         });
     }
 
