@@ -1,7 +1,11 @@
 * = is going to be added for the version
 - Biome +0.0.2 per biome - Mahogany Forest (more trees)*, Mahogany Open Forest (less trees)
-- Structures +0.0.1 per structure - Wizard Tower (books, enchanting tables, diamonds)* // DONE, Treehouse (Small base with secret underneath)* // DONE, Hidden underground vault (diamonds and other resources), Hidden underground bunker (Small base marked by a rock)*, Ancient farm (Small farm with crops like grapes growing)*, Fishing Dock (Boats in chests and fishing rods), Abandoned space station (for space related stuff)
-- Advancements +0.0.1 per advancement - Getting full dragon (name: "Armour of the ancients", description: "What have you done...")*, Getting full divine (name: "True purity", description: "No gods were harmed in the making of this armour")*
-- Dimension +0.0.5 per dimension - Asteroid Belt (Space themed)
-- Loot tables for chests in structures +0.0.1 per loot table - all structures (wizard tower done *2, treehouse done*2)
-- +s to add: +0.0.6
+- Structures +0.0.1 per structure - Wizard Tower (books, enchanting tables, diamonds)* // DONE, Treehouse (Small base with secret underneath)* // DONE, Hidden underground vault (diamonds and other resources), Hidden underground bunker (Small base marked by a rock)* // DONE, Ancient farm (Small farm with crops like grapes growing)* // DONE, Fishing Dock (Boats in chests and fishing rods), Abandoned space station (for space related stuff), Fossil (for fossil block)
+- Advancements +0.0.1 per advancement - Getting full dragon (name: "Armour of the ancients", description: "What have you done...")*, Getting full divine (name: "True purity", description: "No gods were harmed in the making of this armour")*, Gettings full ancient armour (name: "The TRUE ancients", description: "Our first lead")
+- Dimension +0.0.5 per dimension - Asteroid Belt (Space themed), Shadow dimension(Dimension of darkness, lots of mobs)
+- Loot tables for chests in structures +0.0.1 per loot table - all structures (wizard tower done *2, treehouse done *2, ancient farm done *3)
+- Mobs +0.0.2 per mob - Shadow crawler
+- Ores (+tools and armour) +0.0.4 per set - Aluminium, Steel
+- Blocks +0.0.1 per block - Fossil(for ancient armour craft)
+- Other changes/fixes +0.0.1 per fix/change
+- +s to add: +0.0.10

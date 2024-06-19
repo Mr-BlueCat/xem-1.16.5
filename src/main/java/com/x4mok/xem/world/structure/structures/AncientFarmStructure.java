@@ -1,10 +1,7 @@
 package com.x4mok.xem.world.structure.structures;
 
-import com.google.common.collect.ImmutableList;
-import com.mojang.serialization.Codec;
 import com.x4mok.xem.XEM;
 import net.minecraft.block.BlockState;
-import net.minecraft.entity.EntityType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SharedSeedRandom;
 import net.minecraft.util.math.BlockPos;
@@ -14,7 +11,6 @@ import net.minecraft.util.registry.DynamicRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.provider.BiomeProvider;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.gen.GenerationStage;
@@ -27,8 +23,8 @@ import net.minecraft.world.gen.feature.structure.StructureStart;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.feature.template.TemplateManager;
 
-public class TreehouseStructure extends Structure<NoFeatureConfig> {
-    public TreehouseStructure() {
+public class AncientFarmStructure extends Structure<NoFeatureConfig> {
+    public AncientFarmStructure() {
         super(NoFeatureConfig.CODEC);
     }
 
@@ -50,7 +46,7 @@ public class TreehouseStructure extends Structure<NoFeatureConfig> {
 
     @Override
     public IStartFactory<NoFeatureConfig> getStartFactory() {
-        return TreehouseStructure.Start::new;
+        return AncientFarmStructure.Start::new;
     }
 
     public static class Start extends StructureStart<NoFeatureConfig> {
@@ -69,7 +65,7 @@ public class TreehouseStructure extends Structure<NoFeatureConfig> {
                     dynamicRegistries,
                     new VillageConfig(
                             () -> dynamicRegistries.registry(Registry.TEMPLATE_POOL_REGISTRY)
-                                    .get().get(new ResourceLocation(XEM.MODID, "treehouse/start_pool")),
+                                    .get().get(new ResourceLocation(XEM.MODID, "ancient_farm/start_pool")),
                             10
                     ),
                     AbstractVillagePiece::new,
@@ -83,8 +79,6 @@ public class TreehouseStructure extends Structure<NoFeatureConfig> {
             );
 
             this.pieces.forEach(piece -> piece.move(0,0,0));
-            this.pieces.forEach(piece -> piece.getBoundingBox().y0 += 3);
-            this.pieces.forEach(piece -> piece.getBoundingBox().y1 -= 3);
 
             this.calculateBoundingBox();
         }

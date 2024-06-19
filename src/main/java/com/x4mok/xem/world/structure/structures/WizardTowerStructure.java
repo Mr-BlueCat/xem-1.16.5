@@ -83,7 +83,8 @@ public class WizardTowerStructure extends Structure<NoFeatureConfig> {
             );
 
             this.pieces.forEach(piece -> piece.move(0,0,0));
-            this.pieces.forEach(piece -> piece.getBoundingBox().y0 += 1);
+            this.pieces.forEach(piece -> piece.getBoundingBox().y0 -= 1);
+            this.pieces.forEach(piece -> piece.getBoundingBox().y1 -= 1);
 
             this.calculateBoundingBox();
         }

@@ -26,8 +26,10 @@ public class ModStructureGeneration {
             List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
 
             structures.add(() -> ModStructures.WIZARD_TOWER.get().configured(IFeatureConfig.NONE));
-            if (types.contains(BiomeDictionary.Type.PLAINS)) {
+            structures.add(() -> ModStructures.ANCIENT_FARM.get().configured(IFeatureConfig.NONE));
+            if (!types.contains(BiomeDictionary.Type.PLAINS)) {
                 structures.add(() -> ModStructures.TREEHOUSE.get().configured(IFeatureConfig.NONE));
+                structures.add(() -> ModStructures.BUNKER.get().configured(IFeatureConfig.NONE));
             }
 
         }

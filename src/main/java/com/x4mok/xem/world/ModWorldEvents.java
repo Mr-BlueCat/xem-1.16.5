@@ -51,7 +51,7 @@ public class ModWorldEvents {
                     return;
                 }
             } catch (Exception e) {
-                LogManager.getLogger().error("Was unable to check if " + serverWorld.dimensionType().getBiomeZoomer()
+                LogManager.getLogger().error("Was unable to check if " + serverWorld.dimensionType()
                 + " is using Terraforged's ChunkGenerator (i have 0 clue if the thing is right)");
             }
 
@@ -59,8 +59,12 @@ public class ModWorldEvents {
                     new HashMap<>(serverWorld.getChunkSource().generator.getSettings().structureConfig());
             tempMap.putIfAbsent(ModStructures.WIZARD_TOWER.get(),
                     DimensionStructuresSettings.DEFAULTS.get(ModStructures.WIZARD_TOWER.get()));
-            tempMap.putIfAbsent(ModStructures.TREEHOUSE .get(),
+            tempMap.putIfAbsent(ModStructures.TREEHOUSE.get(),
                     DimensionStructuresSettings.DEFAULTS.get(ModStructures.TREEHOUSE.get()));
+            tempMap.putIfAbsent(ModStructures.ANCIENT_FARM.get(),
+                    DimensionStructuresSettings.DEFAULTS.get(ModStructures.ANCIENT_FARM.get()));
+            tempMap.putIfAbsent(ModStructures.BUNKER.get(),
+                    DimensionStructuresSettings.DEFAULTS.get(ModStructures.BUNKER.get()));
             serverWorld.getChunkSource().generator.getSettings().structureConfig = tempMap;
 
         }
