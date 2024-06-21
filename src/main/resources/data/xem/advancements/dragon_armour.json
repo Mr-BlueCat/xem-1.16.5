@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "item": "xem:dragonchestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.xem.dragonarmour.title"
+    },
+    "description": {
+      "translate": "advancements.xem.dragonarmour.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "rewards": {
+    "experience": 1000
+  },
+  "criteria": {
+    "dragon_armour": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "xem:dragonhelmet"
+          },
+          {
+            "item": "xem:dragonchestplate"
+          },
+          {
+            "item": "xem:dragonleggings"
+          },
+          {
+            "item": "xem:dragonboots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dragon_armour"
+    ]
+  ]
+}

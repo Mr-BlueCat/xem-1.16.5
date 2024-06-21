@@ -22,16 +22,16 @@ public class ModStructureGeneration {
         RegistryKey<Biome> key = RegistryKey.create(Registry.BIOME_REGISTRY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
+        List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
         if(types.contains(BiomeDictionary.Type.OVERWORLD)) {
-            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
-
-            structures.add(() -> ModStructures.WIZARD_TOWER.get().configured(IFeatureConfig.NONE));
-            structures.add(() -> ModStructures.ANCIENT_FARM.get().configured(IFeatureConfig.NONE));
-            if (!types.contains(BiomeDictionary.Type.PLAINS)) {
-                structures.add(() -> ModStructures.TREEHOUSE.get().configured(IFeatureConfig.NONE));
-                structures.add(() -> ModStructures.BUNKER.get().configured(IFeatureConfig.NONE));
+            if (!types.contains(BiomeDictionary.Type.OCEAN) && !types.contains(BiomeDictionary.Type.RIVER) && !types.contains(BiomeDictionary.Type.BEACH)) {
+                structures.add(() -> ModStructures.WIZARD_TOWER.get().configured(IFeatureConfig.NONE));
+                structures.add(() -> ModStructures.ANCIENT_FARM.get().configured(IFeatureConfig.NONE));
+                if (!types.contains(BiomeDictionary.Type.PLAINS)) {
+                    structures.add(() -> ModStructures.TREEHOUSE.get().configured(IFeatureConfig.NONE));
+                    structures.add(() -> ModStructures.BUNKER.get().configured(IFeatureConfig.NONE));
+                }
             }
-
         }
 
     }

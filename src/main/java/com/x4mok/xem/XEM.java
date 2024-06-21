@@ -8,9 +8,12 @@ import com.x4mok.xem.events.DragonDrops;
 import com.x4mok.xem.item.ModItems;
 import com.x4mok.xem.screen.InfuserScreen;
 import com.x4mok.xem.tileentity.ModTileEntities;
+import com.x4mok.xem.world.biome.ModBiomes;
+import com.x4mok.xem.world.gen.ModBiomeGeneration;
 import com.x4mok.xem.world.structure.ModStructures;
 import jdk.nashorn.internal.ir.annotations.Immutable;
 import net.minecraft.block.Block;
+import net.minecraft.block.WoodType;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -49,6 +52,7 @@ public class XEM {
         ModContainers.register(eventBus);
         ModRecipeTypes.register(eventBus);
         ModStructures.register(eventBus);
+        ModBiomes.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -70,6 +74,8 @@ public class XEM {
                     .put(ModBlocks.MAHOGANYWOOD.get(), ModBlocks.STRIPPEDMAHOGANYWOOD.get()).build();
 
             ModStructures.setupStructures();
+
+            ModBiomeGeneration.generateBiomes();
         });
     }
 

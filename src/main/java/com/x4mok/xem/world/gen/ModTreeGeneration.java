@@ -24,11 +24,13 @@ public class ModTreeGeneration {
         if(types.contains(BiomeDictionary.Type.PLAINS) || types.contains(BiomeDictionary.Type.FOREST)) {
             List<Supplier<ConfiguredFeature<?,?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-
+/*
             base.add(() -> ModConfiguredFeatures.MAHOGANY
                     .decorated(Features.Placements.HEIGHTMAP_SQUARE)
                     .decorated(Placement.COUNT_EXTRA.configured(
                             new AtSurfaceWithExtraConfig(1, 0.25f, 2))));
+
+ */
         }
 
     }

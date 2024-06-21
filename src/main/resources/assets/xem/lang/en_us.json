@@ -82,5 +82,10 @@
   "tooltip.xem.hiddenblock": "This block will blend in with other blocks",
   "tooltip.xem.ghostblock": "You can walk through this block when its placed down",
 
+  "advancements.xem.dragonarmour.title": "Armour of the ancients",
+  "advancements.xem.dragonarmour.description": "§4What have you done...",
+  "advancements.xem.divinearmour.title": "True purity",
+  "advancements.xem.divinearmour.description": "§eNo gods were harmed in the making of this armour",
+
   "screen.xem.infuser": "Infuser"
 }
