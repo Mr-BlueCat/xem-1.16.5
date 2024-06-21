@@ -84,7 +84,7 @@ public class TreehouseStructure extends Structure<NoFeatureConfig> {
 
             this.pieces.forEach(piece -> piece.move(0,0,0));
             this.pieces.forEach(piece -> piece.getBoundingBox().y0 += 3);
-            this.pieces.forEach(piece -> piece.getBoundingBox().y1 -= 3);
+            this.pieces.forEach(piece -> piece.getBoundingBox().y1 += 3);
 
             this.calculateBoundingBox();
         }

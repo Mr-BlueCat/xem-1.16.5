@@ -80,7 +80,7 @@ public class BunkerStructure extends Structure<NoFeatureConfig> {
 
             this.pieces.forEach(piece -> piece.move(0,0,0));
             this.pieces.forEach(piece -> piece.getBoundingBox().y0 += 5);
-            this.pieces.forEach(piece -> piece.getBoundingBox().y1 -= 5);
+            this.pieces.forEach(piece -> piece.getBoundingBox().y1 += 5);
 
             this.calculateBoundingBox();
         }

@@ -20,42 +20,42 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 0.5,
           "name": "minecraft:netherite_ingot"
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 0.5,
           "name": "minecraft:golden_apple"
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 0.1,
           "name": "minecraft:enchanted_golden_apple"
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "weight": 1.5,
           "name": "minecraft:emerald"
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 0.5,
           "name": "minecraft:totem_of_undying"
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 0.1,
           "name": "minecraft:beacon"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 0.2,
           "name": "minecraft:nether_star"
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 0.01,
           "name": "minecraft:elytra"
         },
         {
@@ -72,7 +72,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 20,
+          "weight": 7.5,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -114,13 +114,13 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 5,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 3
+                "max": 2
               }
             }
           ],
@@ -142,13 +142,13 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 0.1,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 2
+                "max": 1
               }
             }
           ],
@@ -156,13 +156,13 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 0.1,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 2
+                "max": 1
               }
             }
           ],
@@ -170,13 +170,13 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 2.5,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 3,
-                "max": 6
+                "min": 1,
+                "max": 4
               }
             }
           ],
@@ -184,7 +184,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 0.1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -198,13 +198,13 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "weight": 0.5,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2,
-                "max": 4
+                "min": 1,
+                "max": 1
               }
             }
           ],
