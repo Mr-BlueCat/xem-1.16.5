@@ -28,9 +28,12 @@ public class ModBiomes {
             DeferredRegister.create(ForgeRegistries.BIOMES, XEM.MODID);
 
     public static final RegistryObject<Biome> MAHOGANY_FOREST = BIOMES.register("mahogany_forest",
-            () -> makeMahoganyForest(() -> ModConfiguredSurfaceBuilders.MAHOGANY_SURFACE, 0.125f, 0.05f));
+            () -> makeMahoganyForest(() -> ModConfiguredSurfaceBuilders.MAHOGANY_SURFACE, 0.125f, 0.05f, 2, Biome.Category.FOREST));
+    public static final RegistryObject<Biome> MAHOGANY_OPEN_FOREST = BIOMES.register("mahogany_open_forest",
+            () -> makeMahoganyForest(() -> ModConfiguredSurfaceBuilders.MAHOGANY_SURFACE, 0.125f, 0.05f, 1, Biome.Category.PLAINS));
 
-    private static Biome makeMahoganyForest(final Supplier<ConfiguredSurfaceBuilder<?>> surfaceBuilder, float depth, float scale) {
+
+    private static Biome makeMahoganyForest(final Supplier<ConfiguredSurfaceBuilder<?>> surfaceBuilder, float depth, float scale, int treeAmount, Biome.Category biomeCategory) {
         BiomeGenerationSettings.Builder biomeGenerationSettingsBuilder = new BiomeGenerationSettings.Builder()
                 .surfaceBuilder(ConfiguredSurfaceBuilders.GRASS);
 
@@ -48,7 +51,9 @@ public class ModBiomes {
         DefaultBiomeFeatures.addDefaultUndergroundVariety(biomeGenerationSettingsBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeGenerationSettingsBuilder);
         DefaultBiomeFeatures.addDefaultSoftDisks(biomeGenerationSettingsBuilder);
-        biomeGenerationSettingsBuilder.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.MAHOGANY);
+        for (int i = 1; i <= treeAmount; i++) {
+            biomeGenerationSettingsBuilder.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.MAHOGANY);
+        }
         DefaultBiomeFeatures.addWarmFlowers(biomeGenerationSettingsBuilder);
         DefaultBiomeFeatures.addSavannaExtraGrass(biomeGenerationSettingsBuilder);
         DefaultBiomeFeatures.addDefaultMushrooms(biomeGenerationSettingsBuilder);
@@ -58,7 +63,7 @@ public class ModBiomes {
 
         return (new Biome.Builder())
                 .precipitation(Biome.RainType.RAIN)
-                .biomeCategory(Biome.Category.FOREST)
+                .biomeCategory(biomeCategory)
                 .depth(depth)
                 .scale(scale)
                 .temperature(1.0f)

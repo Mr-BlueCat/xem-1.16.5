@@ -27,7 +27,7 @@ public class ModStructureGeneration {
             if (!types.contains(BiomeDictionary.Type.OCEAN) && !types.contains(BiomeDictionary.Type.RIVER) && !types.contains(BiomeDictionary.Type.BEACH)) {
                 structures.add(() -> ModStructures.WIZARD_TOWER.get().configured(IFeatureConfig.NONE));
                 structures.add(() -> ModStructures.ANCIENT_FARM.get().configured(IFeatureConfig.NONE));
-                if (!types.contains(BiomeDictionary.Type.PLAINS) && !types.contains(BiomeDictionary.Type.COLD) && !types.contains(BiomeDictionary.Type.HOT) && !types.contains(BiomeDictionary.Type.SWAMP)) {
+                if (!types.contains(BiomeDictionary.Type.PLAINS) && !types.contains(BiomeDictionary.Type.COLD) && !types.contains(BiomeDictionary.Type.HOT) && !types.contains(BiomeDictionary.Type.SWAMP) && !types.contains(BiomeDictionary.Type.CONIFEROUS) && !types.contains(BiomeDictionary.Type.SNOWY)) {
                     structures.add(() -> ModStructures.TREEHOUSE.get().configured(IFeatureConfig.NONE));
                     structures.add(() -> ModStructures.BUNKER.get().configured(IFeatureConfig.NONE));
                 }

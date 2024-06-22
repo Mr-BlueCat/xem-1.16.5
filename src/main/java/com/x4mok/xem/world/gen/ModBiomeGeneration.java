@@ -12,6 +12,7 @@ import java.util.Objects;
 public class ModBiomeGeneration {
     public static void generateBiomes() {
         addBiome(ModBiomes.MAHOGANY_FOREST.get(), BiomeManager.BiomeType.WARM, 20, BiomeDictionary.Type.HOT, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.WET);
+        addBiome(ModBiomes.MAHOGANY_OPEN_FOREST.get(), BiomeManager.BiomeType.WARM, 20, BiomeDictionary.Type.HOT, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.WET);
     }
 
     private static void addBiome(Biome biome, BiomeManager.BiomeType type, int weight, BiomeDictionary.Type... types) {

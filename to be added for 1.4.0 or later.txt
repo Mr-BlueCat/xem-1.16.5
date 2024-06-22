@@ -1,0 +1,15 @@
+* = is going to be added for the version
+- Biome +0.0.3 per biome - Mahogany Open Forest (less trees)*
+- Structures +0.0.1 per structure - Hidden underground vault (diamonds and other resources)*, Fishing Dock (Boats in chests and fishing rods), Abandoned space station (for space related stuff)*, Fossil (for fossil block)*
+- Advancements +0.0.1 per advancement - Getting full ancient armour (name: "The TRUE ancients", description: "Our first lead")*
+- Dimension +0.0.5 per dimension - Asteroid Belt (Space themed)*, Shadow dimension(Dimension of darkness, lots of mobs)
+- Loot tables for chests in structures +0.0.1 per loot table - all structures
+- Mobs +0.0.2 per mob - Shadow crawler
+- Ores (+tools and armour) +0.0.4 per set - Aluminium (Bauxite ore smelting)*, Steel(Alloy Kiln Iron+charcoal)*, Highly Refined Steel(Steel + Netherite Ingot Alloy Kiln)*, Magi-ingot(Magi-ore smelting)*, Magi-steel(Magi-ingot + highly refined steel Alloy Kiln)*, Ancient(Divine + Aluminium + Highly Refined Steel + Magi-steel Infuser)*, True Ancient(NO INGOT -> Fossil Refinery = ancient scales, ancient scales *4 + ancient armour infuser)
+- Tile Entities +0.0.3 per tile entity + 0.0.1 per recipe - Refinery*, Alchemical modifier*, Alloy Kiln*
+- Fluids +0.0.2 per fluid - oil (forge:oil + forge:fluids/oil or whatever it is)*
+- Blocks +0.0.1 per block - Fossil(for ancient armour craft)
+- Other changes/fixes +0.0.1 per fix/change
+- JEI integration (soon) +0.0.5
+- +s to add: +0.0.0
+- unfinished for ver (sets)
