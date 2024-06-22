@@ -3,10 +3,7 @@ package com.x4mok.xem.world.structure;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.x4mok.xem.XEM;
-import com.x4mok.xem.world.structure.structures.AncientFarmStructure;
-import com.x4mok.xem.world.structure.structures.BunkerStructure;
-import com.x4mok.xem.world.structure.structures.TreehouseStructure;
-import com.x4mok.xem.world.structure.structures.WizardTowerStructure;
+import com.x4mok.xem.world.structure.structures.*;
 import jdk.nashorn.internal.ir.annotations.Immutable;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
@@ -33,16 +30,20 @@ public class ModStructures {
             STRUCTURES.register("ancient_farm", AncientFarmStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> BUNKER =
             STRUCTURES.register("bunker", BunkerStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> VAULT =
+            STRUCTURES.register("vault", VaultStructure::new);
 
     public static void setupStructures() {
         setupMapSpacingAndLand(WIZARD_TOWER.get(),
-                new StructureSeparationSettings(45, 20, 1234567890), true);
+                new StructureSeparationSettings(100, 35, 1234567890), true);
         setupMapSpacingAndLand(TREEHOUSE.get(),
-                new StructureSeparationSettings(35, 23, 1983402567), true);
+                new StructureSeparationSettings(45, 33, 1983402567), true);
         setupMapSpacingAndLand(ANCIENT_FARM.get(),
-                new StructureSeparationSettings(35, 23, 1053495435), true);
+                new StructureSeparationSettings(45, 33, 1053495435), true);
         setupMapSpacingAndLand(BUNKER.get(),
-                new StructureSeparationSettings(25, 20, 743325235), true);
+                new StructureSeparationSettings(45, 40, 743325235), true);
+        setupMapSpacingAndLand(VAULT.get(),
+                new StructureSeparationSettings(115, 114, 584929866), true);
         // int 1 = average dist in chunks between spawn attempts
         // int 2 = min dist in chunks between spawn attempts >> MUST BE SMALLER THAN int 1 <<
         // int 3 modifies see of structure so no two structures spawn over each-other - should be large and unique // btw 2147483647 is integer limit
