@@ -8,11 +8,12 @@
 - Ores (+tools and armour) +0.0.4 per set - Aluminium (Bauxite ore smelting)*, Steel(Alloy Kiln Iron+charcoal)*, Highly Refined Steel(Steel + Netherite Ingot Alloy Kiln)*, Magi-ingot(Magi-ore smelting)*, Magi-steel(Magi-ingot + highly refined steel Alloy Kiln)*, Ancient(Divine + Aluminium + Highly Refined Steel + Magi-steel Infuser)*, True Ancient(NO INGOT -> Fossil Refinery = ancient scales, ancient scales *4 + ancient armour infuser)*
 - Tile Entities +0.0.3 per tile entity + 0.0.1 per recipe - Refinery*, Alchemical modifier*, Alloy Kiln*
 - Fluids +0.0.2 per fluid - oil (forge:oil + forge:fluids/oil or whatever it is)*
-- Blocks +0.0.1 per block - Fossil(for ancient armour craft)*
+- Blocks +0.0.1 per block - Fossil(for ancient armour craft)* // DONE
 - Other changes/fixes +0.0.1 per fix/change
 - JEI integration (soon) +0.0.5
+- Other named +0.0.2 per - Infuser tick (takes time to infuse stuff basically)
 
-- +s to add: +0.0.3
+- +s to add: +0.0.1
 
 - unfinished for ver (sets)
 ~ Structures
@@ -22,4 +23,3 @@
 ~ Ores
 ~ Tile Entities
 ~ Fluids
-~ Blocks

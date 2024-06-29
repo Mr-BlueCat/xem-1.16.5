@@ -32,6 +32,10 @@ public class ModStructures {
             STRUCTURES.register("bunker", BunkerStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> VAULT =
             STRUCTURES.register("vault", VaultStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> STATION =
+            STRUCTURES.register("station", StationStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> FOSSIL =
+            STRUCTURES.register("fossil", FossilStructure::new);
 
     public static void setupStructures() {
         setupMapSpacingAndLand(WIZARD_TOWER.get(),
@@ -44,6 +48,10 @@ public class ModStructures {
                 new StructureSeparationSettings(45, 40, 743325235), true);
         setupMapSpacingAndLand(VAULT.get(),
                 new StructureSeparationSettings(115, 114, 584929866), true);
+        setupMapSpacingAndLand(STATION.get(),
+                new StructureSeparationSettings(100, 35, 1243254523), true);
+        setupMapSpacingAndLand(FOSSIL.get(),
+                new StructureSeparationSettings(25, 5, 254302342), true);
         // int 1 = average dist in chunks between spawn attempts
         // int 2 = min dist in chunks between spawn attempts >> MUST BE SMALLER THAN int 1 <<
         // int 3 modifies see of structure so no two structures spawn over each-other - should be large and unique // btw 2147483647 is integer limit

@@ -2,7 +2,7 @@
   "type": "xem:infuser",
   "ingredients": [
     {
-      "item": "minecraft:end_stone"
+      "item": "minecraft:shulker_shell"
     },
     {
       "item": "xem:dragonscale"

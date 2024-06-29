@@ -39,6 +39,16 @@
   "item.xem.divinepickaxe": "Divine Pickaxe",
   "item.xem.divineshovel": "Divine Shovel",
   "item.xem.divinehoe": "Divine Hoe",
+  "item.xem.steelingot": "Steel Ingot",
+  "item.xem.steelhelmet": "Steel Helmet",
+  "item.xem.steelchestplate": "Steel Chestplate",
+  "item.xem.steelleggings": "Steel Leggings",
+  "item.xem.steelboots": "Steel Boots",
+  "item.xem.steelsword": "Steel Sword",
+  "item.xem.steelaxe": "Steel Axe",
+  "item.xem.steelpickaxe": "Steel Pickaxe",
+  "item.xem.steelshovel": "Steel Shovel",
+  "item.xem.steelhoe": "Steel Hoe",
 
   "block.xem.magicendstone": "Magically Infused End Stone",
   "block.xem.infuser": "Infuser",
@@ -76,6 +86,9 @@
   "block.xem.divineore": "Divine Ore",
   "block.xem.divineblock": "Divine Block",
   "block.xem.divinestairs": "Divine Stairs",
+  "block.xem.fossil": "Fossil",
+  "block.xem.steelblock": "Steel Block",
+  "block.xem.steelstairs": "Steel Stairs",
 
   "tooltip.xem.moreinfo": "Hold §eSHIFT§r to see more Info!",
   "tooltip.xem.amulet_shift": "I wonder if this does something to end portal frames?",
@@ -87,5 +100,8 @@
   "advancements.xem.divinearmour.title": "True purity",
   "advancements.xem.divinearmour.description": "§eNo gods were harmed in the making of this armour",
 
-  "screen.xem.infuser": "Infuser"
+  "screen.xem.infuser": "Infuser",
+
+  "biome.xem.mahoganyforest": "Mahogany Forest",
+  "biome.xem.mahoganyopenforest": "Mahogany Open Forest"
 }

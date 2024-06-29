@@ -109,6 +109,10 @@ public class ModBlocks {
             () -> new StairsBlock(() -> DIVINEBLOCK.get().defaultBlockState(), AbstractBlock.Properties.of(Material.METAL).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> FOSSIL = registerBlock("fossil",
             () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestLevel(7).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
+    public static final RegistryObject<Block> STEELBLOCK = registerBlock("steelblock",
+            () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestLevel(3).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
+    public static final RegistryObject<Block> STEELSTAIRS = registerBlock("steelstairs",
+            () -> new StairsBlock(() -> STEELBLOCK.get().defaultBlockState(), AbstractBlock.Properties.of(Material.METAL).harvestLevel(1).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
 
     private static  <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
