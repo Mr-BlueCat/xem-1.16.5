@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "aluminiumarmour",
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/aluminium"
+    }
+  },
+
+  "result": {
+    "item": "xem:aluminiumhelmet"
+  }
+}

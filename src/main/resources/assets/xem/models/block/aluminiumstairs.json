@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "xem:block/aluminiumblock",
+    "top": "xem:block/aluminiumblock",
+    "side": "xem:block/aluminiumblock"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "steel",
+  "ingredients": [
+    {
+      "item": "xem:steelblock"
+    }
+  ],
+
+  "result": {
+    "item": "xem:steelingot",
+    "count": 9
+  }
+}

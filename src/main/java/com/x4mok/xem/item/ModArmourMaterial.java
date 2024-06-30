@@ -20,6 +20,9 @@ public enum ModArmourMaterial implements IArmorMaterial {
     COPPER("copper", 15, new int[]{3, 5, 5, 3}, 10, SoundEvents.ARMOR_EQUIP_IRON, 0.5F, 0.0F, () -> {
         return Ingredient.of(ModItems.COPPERINGOT.get());
     }),
+    ALUMINIUM("aluminium", 13, new int[]{3, 4, 4, 2}, 30, SoundEvents.ARMOR_EQUIP_IRON, 0.4F, 0.0F, () -> {
+        return Ingredient.of(ModItems.ALUMINIUMINGOT.get());
+    }),
     STEEL("steel", 30, new int[]{3, 5, 6, 4}, 9, SoundEvents.ARMOR_EQUIP_IRON, 0.5F, 0.01F, () -> {
         return Ingredient.of(ModItems.STEELINGOT.get());
     }),

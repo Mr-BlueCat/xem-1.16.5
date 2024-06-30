@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "aluminiumtools",
+  "pattern": [
+    "##",
+    "#/",
+    " /"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/aluminium"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result": {
+    "item": "xem:aluminiumaxe"
+  }
+}

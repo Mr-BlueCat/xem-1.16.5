@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "steeltools",
+  "pattern": [
+    "##",
+    "#/",
+    " /"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steel"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result": {
+    "item": "xem:steelaxe"
+  }
+}

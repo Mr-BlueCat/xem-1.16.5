@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "steel",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steel"
+    }
+
+  },
+  "result": {
+    "item": "xem:steelblock",
+    "count": 1
+  }
+}

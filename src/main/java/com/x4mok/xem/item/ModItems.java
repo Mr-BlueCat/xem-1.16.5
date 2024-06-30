@@ -113,6 +113,26 @@ public class ModItems {
             () -> new ArmorItem(ModArmourMaterial.STEEL, EquipmentSlotType.LEGS, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
     public static final RegistryObject<Item> STEELBOOTS = ITEMS.register("steelboots",
             () -> new ArmorItem(ModArmourMaterial.STEEL, EquipmentSlotType.FEET, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
+    public static final RegistryObject<Item> ALUMINIUMINGOT = ITEMS.register("aluminiumingot",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.COMMON)));
+    public static final RegistryObject<Item> ALUMINIUMSWORD = ITEMS.register("aluminiumsword",
+            () -> new SwordItem(ModItemTier.ALUMINIUM, 3, -2.4F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
+    public static final RegistryObject<Item> ALUMINIUMAXE = ITEMS.register("aluminiumaxe",
+            () -> new AxeItem(ModItemTier.ALUMINIUM, 6.5f, -3.0F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
+    public static final RegistryObject<Item> ALUMINIUMPICKAXE = ITEMS.register("aluminiumpickaxe",
+            () -> new PickaxeItem(ModItemTier.ALUMINIUM, 1, -2.8F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
+    public static final RegistryObject<Item> ALUMINIUMSHOVEL = ITEMS.register("aluminiumshovel",
+            () -> new ShovelItem(ModItemTier.ALUMINIUM, 1.5f, -3.0F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
+    public static final RegistryObject<Item> ALUMINIUMHOE = ITEMS.register("aluminiumhoe",
+            () -> new HoeItem(ModItemTier.ALUMINIUM, 0, -2.0F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
+    public static final RegistryObject<Item> ALUMINIUMHELMET = ITEMS.register("aluminiumhelmet",
+            () -> new ArmorItem(ModArmourMaterial.ALUMINIUM, EquipmentSlotType.HEAD, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
+    public static final RegistryObject<Item> ALUMINIUMCHESTPLATE = ITEMS.register("aluminiumchestplate",
+            () -> new ArmorItem(ModArmourMaterial.ALUMINIUM, EquipmentSlotType.CHEST, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
+    public static final RegistryObject<Item> ALUMINIUMLEGGINGS = ITEMS.register("aluminiumleggings",
+            () -> new ArmorItem(ModArmourMaterial.ALUMINIUM, EquipmentSlotType.LEGS, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
+    public static final RegistryObject<Item> ALUMINIUMBOOTS = ITEMS.register("aluminiumboots",
+            () -> new ArmorItem(ModArmourMaterial.ALUMINIUM, EquipmentSlotType.FEET, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

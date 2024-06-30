@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "aluminium",
+  "ingredients": [
+    {
+      "item": "xem:aluminiumblock"
+    }
+  ],
+
+  "result": {
+    "item": "xem:aluminiumingot",
+    "count": 9
+  }
+}

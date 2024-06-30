@@ -7,6 +7,7 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
+    ALUMINIUM(2, 240, 4.0f, 1.5f, 30, () -> Ingredient.of(ModItems.ALUMINIUMINGOT.get())),
     COPPER(2, 300, 5.0f, 2.0f, 14, () -> Ingredient.of(ModItems.COPPERINGOT.get())),
     STEEL(2, 900, 6.5f, 2.5f, 11, () -> Ingredient.of(ModItems.STEELINGOT.get())),
     DRAGON(5, 3131, 10.5f, 5.0f, 15, () -> Ingredient.of(ModItems.DRAGONSCALE.get())),

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "aluminium",
+  "ingredient": {
+    "item": "xem:bauxiteore"
+  },
+  "result": "xem:aluminiumingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

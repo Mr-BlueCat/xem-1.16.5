@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "xem:magicendstone",
+    "xem:magicframe",
+    "xem:dragonhelmet",
+    "xem:dragonchestplate",
+    "xem:dragonleggings",
+    "xem:dragonboots",
+    "xem:dragonsword",
+    "xem:dragonaxe",
+    "xem:dragonpickaxe",
+    "xem:dragonshovel",
+    "xem:dragonhoe",
+    "xem:divinehelmet",
+    "xem:divinechestplate",
+    "xem:divineleggings",
+    "xem:divineboots",
+    "xem:divinesword",
+    "xem:divineaxe",
+    "xem:divinepickaxe",
+    "xem:divineshovel",
+    "xem:divinehoe"
+  ]
+}

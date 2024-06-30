@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "aluminium",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/aluminium"
+    }
+
+  },
+  "result": {
+    "item": "xem:aluminiumblock",
+    "count": 1
+  }
+}
