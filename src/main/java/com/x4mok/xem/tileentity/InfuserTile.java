@@ -52,14 +52,14 @@ public class InfuserTile extends TileEntity implements ITickableTileEntity{
     }
 
     public boolean isInfusingMaterial(ItemStack stack) {
-        return stack.getItem().is(ItemTags.createOptional(new ResourceLocation("xem", "infusingmaterials")));
+        return stack.getItem().is(ItemTags.createOptional(new ResourceLocation("xem", "infusingmaterials"))) || stack.getItem().is(ItemTags.createOptional(new ResourceLocation("forge", "infusingmaterials")));
     }
     public boolean isInfusable(ItemStack stack) {
-        return stack.getItem().is(ItemTags.createOptional(new ResourceLocation("xem", "infusablematerials")));
+        return stack.getItem().is(ItemTags.createOptional(new ResourceLocation("xem", "infusablematerials"))) || stack.getItem().is(ItemTags.createOptional(new ResourceLocation("forge", "infusablematerials")));
     }
 
     public boolean isInfusingResult(ItemStack stack) {
-        return stack.getItem().is(ItemTags.createOptional(new ResourceLocation("xem", "infusingresults")));
+        return stack.getItem().is(ItemTags.createOptional(new ResourceLocation("xem", "infusingresults"))) || stack.getItem().is(ItemTags.createOptional(new ResourceLocation("forge", "infusingresults")));
     }
 
 

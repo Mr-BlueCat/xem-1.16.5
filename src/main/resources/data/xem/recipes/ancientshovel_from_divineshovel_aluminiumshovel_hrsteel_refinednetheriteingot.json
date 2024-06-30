@@ -1,0 +1,22 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "xem:divineshovel"
+    },
+    {
+      "item": "xem:aluminiumshovel"
+    },
+    {
+      "item": "xem:refinednetheriteingot"
+    },
+    {
+      "item": "xem:hrsteelingot"
+    }
+  ],
+
+  "output": {
+    "item": "xem:ancientshovel",
+    "amount": 1
+  }
+}

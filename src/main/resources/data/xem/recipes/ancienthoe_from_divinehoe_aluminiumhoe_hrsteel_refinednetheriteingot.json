@@ -1,0 +1,22 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "xem:divinehoe"
+    },
+    {
+      "item": "xem:aluminiumhoe"
+    },
+    {
+      "item": "xem:refinednetheriteingot"
+    },
+    {
+      "item": "xem:hrsteelingot"
+    }
+  ],
+
+  "output": {
+    "item": "xem:ancienthoe",
+    "amount": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "xem:divinehelmet"
+    },
+    {
+      "item": "xem:aluminiumhelmet"
+    },
+    {
+      "item": "xem:refinednetheriteingot"
+    },
+    {
+      "item": "xem:hrsteelingot"
+    }
+  ],
+
+  "output": {
+    "item": "xem:ancienthelmet",
+    "amount": 1
+  }
+}

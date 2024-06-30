@@ -135,6 +135,28 @@ public class ModItems {
             () -> new ArmorItem(ModArmourMaterial.ALUMINIUM, EquipmentSlotType.FEET, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
     public static final RegistryObject<Item> HRSTEELINGOT = ITEMS.register("hrsteelingot",
             () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.COMMON)));
+    public static final RegistryObject<Item> ANCIENTINGOT = ITEMS.register("ancientingot",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> ANCIENTSWORD = ITEMS.register("ancientsword",
+            () -> new SwordItem(ModItemTier.ANCIENT, 3, -2.4F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> ANCIENTAXE = ITEMS.register("ancientaxe",
+            () -> new AxeItem(ModItemTier.ANCIENT, 6.5f, -3.0F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> ANCIENTPICKAXE = ITEMS.register("ancientpickaxe",
+            () -> new PickaxeItem(ModItemTier.ANCIENT, 1, -2.8F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> ANCIENTSHOVEL = ITEMS.register("ancientshovel",
+            () -> new ShovelItem(ModItemTier.ANCIENT, 1.5f, -3.0F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> ANCIENTHOE = ITEMS.register("ancienthoe",
+            () -> new HoeItem(ModItemTier.ANCIENT, 0, -2.0F, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> ANCIENTHELMET = ITEMS.register("ancienthelmet",
+            () -> new ArmorItem(ModArmourMaterial.ANCIENT, EquipmentSlotType.HEAD, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> ANCIENTCHESTPLATE = ITEMS.register("ancientchestplate",
+            () -> new ArmorItem(ModArmourMaterial.ANCIENT, EquipmentSlotType.CHEST, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> ANCIENTLEGGINGS = ITEMS.register("ancientleggings",
+            () -> new ArmorItem(ModArmourMaterial.ANCIENT, EquipmentSlotType.LEGS, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> ANCIENTBOOTS = ITEMS.register("ancientboots",
+            () -> new ArmorItem(ModArmourMaterial.ANCIENT, EquipmentSlotType.FEET, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
+    public static final RegistryObject<Item> REFINEDNETHERITEINGOT = ITEMS.register("refinednetheriteingot",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.COMMON)));
 
 
 

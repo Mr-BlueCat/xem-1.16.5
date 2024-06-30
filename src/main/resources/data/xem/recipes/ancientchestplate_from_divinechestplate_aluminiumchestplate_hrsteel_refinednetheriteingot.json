@@ -1,0 +1,22 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "xem:divinechestplate"
+    },
+    {
+      "item": "xem:aluminiumchestplate"
+    },
+    {
+      "item": "xem:refinednetheriteingot"
+    },
+    {
+      "item": "xem:hrsteelingot"
+    }
+  ],
+
+  "output": {
+    "item": "xem:ancientchestplate",
+    "amount": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "xem:divinepickaxe"
+    },
+    {
+      "item": "xem:aluminiumpickaxe"
+    },
+    {
+      "item": "xem:refinednetheriteingot"
+    },
+    {
+      "item": "xem:hrsteelingot"
+    }
+  ],
+
+  "output": {
+    "item": "xem:ancientpickaxe",
+    "amount": 1
+  }
+}

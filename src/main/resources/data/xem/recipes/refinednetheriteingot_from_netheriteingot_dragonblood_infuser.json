@@ -1,0 +1,19 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "xem:dragonblood"
+    },
+    {
+      "item": "xem:dragonblood"
+    }
+  ],
+
+  "output": {
+    "item": "xem:refinednetheriteingot",
+    "amount": 1
+  }
+}

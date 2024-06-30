@@ -11,7 +11,8 @@ public enum ModItemTier implements IItemTier {
     COPPER(2, 300, 5.0f, 2.0f, 14, () -> Ingredient.of(ModItems.COPPERINGOT.get())),
     STEEL(2, 900, 6.5f, 2.5f, 11, () -> Ingredient.of(ModItems.STEELINGOT.get())),
     DRAGON(5, 3131, 10.5f, 5.0f, 15, () -> Ingredient.of(ModItems.DRAGONSCALE.get())),
-    DIVINE(6, 3662, 11.5f, 6.0f, 16, () -> Ingredient.of(ModItems.DIVINEINGOT.get()));
+    DIVINE(6, 3662, 11.5f, 6.0f, 16, () -> Ingredient.of(ModItems.DIVINEINGOT.get())),
+    ANCIENT(7, 4181, 12.5f, 6.5f, 13, () -> Ingredient.of(ModItems.ANCIENTINGOT.get()));
 
     private final int level;
     private final int uses;

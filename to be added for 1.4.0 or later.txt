@@ -5,7 +5,7 @@
 - Dimension +0.0.5 per dimension - Asteroid Belt (Space themed)*, Shadow realm(Dimension of darkness, lots of mobs)
 - Loot tables for chests in structures +0.0.1 per loot table - all structures
 - Mobs +0.0.2 per mob - Shadow crawler
-- Ores (+tools and armour) +0.0.4 per set - Aluminium (Bauxite ore smelting)* // DONE, Steel(Alloy Kiln Iron+charcoal)* // DONE (ITEM), Highly Refined Steel(Steel + Netherite Ingot Alloy Kiln (NO ARMOUR/TOOLS))* // DONE (ITEM), Magi-ingot(Magi-ore smelting)*, Magi-steel(Magi-ingot + highly refined steel Alloy Kiln)*, Ancient(Divine + Aluminium + Highly Refined Steel + Magi-steel Infuser)*, True Ancient(NO INGOT -> Fossil Refinery = ancient scales, ancient scales *4 + ancient armour infuser)*
+- Ores (+tools and armour) +0.0.4 per set - Aluminium (Bauxite ore smelting)* // DONE, Steel(Alloy Kiln Iron+charcoal)* // DONE, Highly Refined Steel(Steel + Netherite Ingot Alloy Kiln (NO ARMOUR/TOOLS))* // DONE, Magi-ingot(Magi-ore smelting)*, Magi-steel(Magi-ingot + highly refined steel Alloy Kiln)*, Ancient(Divine + Aluminium + Highly Refined Steel + Refined Netherite Ingot Infuser)* // DONE, True Ancient(NO INGOT -> Fossil Refinery = ancient scales, ancient scales *4 + ancient armour infuser)*
 - Tile Entities +0.0.3 per tile entity + 0.0.1 per recipe - Refinery*, Alchemical modifier*, Alloy Kiln*
 - Fluids +0.0.2 per fluid - oil (forge:oil + forge:fluids/oil or whatever it is)*
 - Blocks +0.0.1 per block - Fossil(for ancient armour craft)* // DONE
@@ -14,7 +14,7 @@
 - Recipes for stuff +0.0.2 per set (e.g full armour crafts = 0.0.2)
 - Other named +0.0.2 per - Infuser tick (takes time to infuse stuff basically)
 
-- +s to add: +0.0.0
+- +s to add: +0.0.14
 
 - unfinished for ver (sets)
 ~ Ores

@@ -1,0 +1,16 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+
+  "output": {
+    "item": "xem:steelingot",
+    "amount": 1
+  }
+}

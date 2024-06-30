@@ -1,0 +1,19 @@
+{
+  "type": "xem:infuser",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/highlyrefinedsteel"
+    },
+    {
+      "tag": "forge:ingots/steel"
+    },
+    {
+      "item": "xem:refinednetheriteingot"
+    }
+  ],
+
+  "output": {
+    "item": "xem:hrsteelingot",
+    "amount": 1
+  }
+}

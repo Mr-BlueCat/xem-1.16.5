@@ -28,6 +28,9 @@ public enum ModArmourMaterial implements IArmorMaterial {
     }),
     DIVINE("divine", 60, new int[]{6,8,9,6}, 32, SoundEvents.ARMOR_EQUIP_TURTLE, 5.5F, 0.5F, () -> {
         return Ingredient.of(ModItems.DIVINEINGOT.get());
+    }),
+    ANCIENT("ancient", 75, new int[]{7,9,10,7}, 24, SoundEvents.ARMOR_EQUIP_NETHERITE, 6.0F, 0.6F, () -> {
+        return Ingredient.of(ModItems.ANCIENTINGOT.get());
     });
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;

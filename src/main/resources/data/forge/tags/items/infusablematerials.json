@@ -20,6 +20,18 @@
     "minecraft:netherite_helmet",
     "minecraft:netherite_chestplate",
     "minecraft:netherite_leggings",
-    "minecraft:netherite_boots"
+    "minecraft:netherite_boots",
+    "xem:divinehelmet",
+    "xem:divinechestplate",
+    "xem:divineleggings",
+    "xem:divineboots",
+    "xem:divinesword",
+    "xem:divineaxe",
+    "xem:divinepickaxe",
+    "xem:divineshovel",
+    "xem:divinehoe",
+    "xem:steelingot",
+    "minecraft:netherite_ingot",
+    "minecraft:iron_ingot"
   ]
 }
