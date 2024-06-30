@@ -13,6 +13,7 @@
   },
 
   "result": {
-    "item": "xem:netheritestairs"
+    "item": "xem:netheritestairs",
+    "amount": 6
   }
 }

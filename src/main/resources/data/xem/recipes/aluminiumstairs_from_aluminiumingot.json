@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "orestairs",
+  "group": "aluminium",
   "pattern": [
     "#  ",
     "## ",
@@ -8,12 +8,12 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:emerald"
+      "tag": "forge:ingots/aluminium"
     }
-  },
 
+  },
   "result": {
-    "item": "xem:emeraldstairs",
-    "amount": 6
+    "item": "xem:aluminiumstairs",
+    "count": 6
   }
 }

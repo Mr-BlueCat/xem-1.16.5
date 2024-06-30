@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "orestairs",
+  "group": "steel",
   "pattern": [
     "#  ",
     "## ",
@@ -8,12 +8,12 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:emerald"
+      "tag": "forge:ingots/steel"
     }
-  },
 
+  },
   "result": {
-    "item": "xem:emeraldstairs",
+    "item": "xem:steelstairs",
     "amount": 6
   }
 }

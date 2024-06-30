@@ -59,6 +59,7 @@
   "item.xem.aluminiumpickaxe": "Aluminium Pickaxe",
   "item.xem.aluminiumshovel": "Aluminium Shovel",
   "item.xem.aluminiumhoe": "Aluminium Hoe",
+  "item.xem.hrsteelingot": "Highly Refined Steel Ingot",
 
   "block.xem.magicendstone": "Magically Infused End Stone",
   "block.xem.infuser": "Infuser",
@@ -102,6 +103,8 @@
   "block.xem.aluminiumblock": "Aluminium Block",
   "block.xem.aluminiumstairs": "Aluminium Stairs",
   "block.xem.bauxiteore": "Bauxite Ore",
+  "block.xem.hrsteelblock": "Highly Refined Steel Block",
+  "block.xem.hrsteelstairs": "Highly Refined Steel Stairs",
 
   "tooltip.xem.moreinfo": "Hold §eSHIFT§r to see more Info!",
   "tooltip.xem.amulet_shift": "I wonder if this does something to end portal frames?",

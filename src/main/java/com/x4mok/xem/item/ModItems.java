@@ -133,6 +133,10 @@ public class ModItems {
             () -> new ArmorItem(ModArmourMaterial.ALUMINIUM, EquipmentSlotType.LEGS, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
     public static final RegistryObject<Item> ALUMINIUMBOOTS = ITEMS.register("aluminiumboots",
             () -> new ArmorItem(ModArmourMaterial.ALUMINIUM, EquipmentSlotType.FEET, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.COMMON))));
+    public static final RegistryObject<Item> HRSTEELINGOT = ITEMS.register("hrsteelingot",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.COMMON)));
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
