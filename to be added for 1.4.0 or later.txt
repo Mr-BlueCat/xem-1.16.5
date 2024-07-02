@@ -14,7 +14,7 @@
 - Recipes for stuff +0.0.2 per set (e.g full armour crafts = 0.0.2)
 - Other named +0.0.2 per - Infuser tick (takes time to infuse stuff basically)
 
-- +s to add: +0.0.14
+- +s to add: +0.0.0
 
 - unfinished for ver (sets)
 ~ Ores

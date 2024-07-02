@@ -2,9 +2,6 @@
   "type": "xem:infuser",
   "ingredients": [
     {
-      "tag": "forge:ingots/highlyrefinedsteel"
-    },
-    {
       "tag": "forge:ingots/steel"
     },
     {
