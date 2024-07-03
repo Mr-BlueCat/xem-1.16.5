@@ -17,6 +17,9 @@ public class ModTileEntities {
     public static final RegistryObject<TileEntityType<InfuserTile>> INFUSER = TILE_ENTITIES.register("infuser_tile",
             () -> (TileEntityType.Builder.of(InfuserTile::new, ModBlocks.INFUSER.get())).build(null));
 
+    public static final RegistryObject<TileEntityType<InfuserTile>> ALLOY_KILN = TILE_ENTITIES.register("alloy_kiln_tile",
+            () -> (TileEntityType.Builder.of(AlloyKilnTile::new, ModBlocks.ALLOYKILN.get())).build(null));
+
     public static void register(IEventBus eventBus) {
         TILE_ENTITIES.register(eventBus);
     }

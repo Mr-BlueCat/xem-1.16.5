@@ -123,6 +123,11 @@ public class ModBlocks {
             () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestLevel(4).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
     public static final RegistryObject<Block> HRSTEELSTAIRS = registerBlock("hrsteelstairs",
             () -> new StairsBlock(() -> ALUMINIUMBLOCK.get().defaultBlockState(), AbstractBlock.Properties.of(Material.METAL).harvestLevel(4).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ALLOYKILN = registerBlock("alloykiln",
+            () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestLevel(4).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
+
+
+
 
     private static  <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

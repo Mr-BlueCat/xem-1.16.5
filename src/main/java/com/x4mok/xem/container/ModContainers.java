@@ -23,6 +23,14 @@ public class ModContainers {
                         return new InfuserContainer(windowId, world, pos, inv, inv.player);
                     })));
 
+    public static final RegistryObject<ContainerType<InfuserContainer>> ALLOY_KILN_CONTAINER =
+            CONTAINERS.register("alloy_kiln_container",
+                    ()-> IForgeContainerType.create(((windowId, inv, data) -> {
+                        BlockPos pos = data.readBlockPos();
+                        World world = inv.player.getEntity().level;
+                        return new AlloyKilnContainer(windowId, world, pos, inv, inv.player);
+                    })));
+
     public static void register(IEventBus eventBus) {
         CONTAINERS.register(eventBus);
     }

@@ -126,8 +126,11 @@
   "advancements.xem.dragonarmour.description": "§4What have you done...",
   "advancements.xem.divinearmour.title": "True purity",
   "advancements.xem.divinearmour.description": "§eNo gods were harmed in the making of this armour",
+  "advancements.xem.ancientarmour.title": "The Ancients",
+  "advancements.xem.ancientarmour.description": "§4Our first lead",
 
   "screen.xem.infuser": "Infuser",
+  "screen.xem.alloykiln": "Alloy Kiln",
 
   "biome.xem.mahoganyforest": "Mahogany Forest",
   "biome.xem.mahoganyopenforest": "Mahogany Open Forest"
