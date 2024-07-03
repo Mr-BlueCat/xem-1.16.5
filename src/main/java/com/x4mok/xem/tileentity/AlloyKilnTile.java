@@ -120,8 +120,8 @@ public class AlloyKilnTile extends TileEntity implements ITickableTileEntity{
 
         recipe.ifPresent(iRecipe -> {
             ItemStack output = iRecipe.getResultItem();
-            if (itemHandler.getStackInSlot(5) != ItemStack.EMPTY) {
-                if (itemHandler.getStackInSlot(5).getItem() == output.getStack().getItem() && itemHandler.getStackInSlot(5).getCount() <= 63) {
+            if (itemHandler.getStackInSlot(3) != ItemStack.EMPTY) {
+                if (itemHandler.getStackInSlot(3).getItem() == output.getStack().getItem() && itemHandler.getStackInSlot(3).getCount() <= 63) {
                     int amount = iRecipe.getAmount();
 
                     craftTheItem(output, amount);
@@ -143,9 +143,7 @@ public class AlloyKilnTile extends TileEntity implements ITickableTileEntity{
         itemHandler.extractItem(0, 1, false);
         itemHandler.extractItem(1, 1, false);
         itemHandler.extractItem(2, 1, false);
-        itemHandler.extractItem(3, 1, false);
-        itemHandler.extractItem(4, 1, false);
-        itemHandler.insertItem(5, output, false);
+        itemHandler.insertItem(3, output, false);
     }
 
     @Override

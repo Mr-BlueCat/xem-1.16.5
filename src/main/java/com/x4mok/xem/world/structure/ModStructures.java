@@ -4,7 +4,6 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.x4mok.xem.XEM;
 import com.x4mok.xem.world.structure.structures.*;
-import jdk.nashorn.internal.ir.annotations.Immutable;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import net.minecraft.world.gen.feature.structure.Structure;

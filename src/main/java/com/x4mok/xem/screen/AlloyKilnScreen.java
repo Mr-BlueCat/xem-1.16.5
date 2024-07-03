@@ -12,9 +12,9 @@ import net.minecraft.util.text.ITextComponent;
 
 public class AlloyKilnScreen extends ContainerScreen<AlloyKilnContainer> {
     private final ResourceLocation GUI = new ResourceLocation(XEM.MODID,
-            "textures/gui/alooykilngui.png");
+            "textures/gui/alloykilngui.png");
 
-    public AlloyKilnScreen(InfuserContainer screenContainer, PlayerInventory inv, ITextComponent title) {
+    public AlloyKilnScreen(AlloyKilnContainer screenContainer, PlayerInventory inv, ITextComponent title) {
         super(screenContainer, inv, title);
     }
 

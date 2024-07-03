@@ -1,7 +1,7 @@
 * = is going to be added for the version
 - Biome +0.0.3 per biome - Mahogany Open Forest (less trees)* // DONE, Divine Digsite (Only divine ore spawn biome)*
 - Structures +0.0.2 per structure - Hidden underground vault (diamonds and other resources)* // DONE, Fishing Dock (Boats in chests and fishing rods), Abandoned space station (for space related stuff)* // DONE, Fossil (for fossil block)* // DONE, Broken Shadow Portal (Essentially a broken form the portal to the shadow realm)
-- Advancements +0.0.1 per advancement - Getting full ancient armour (name: "The Ancients", description: "Our first lead")*, Getting full true ancient armour (name: "The TRUE Ancients", description: "Where did they go?")*, Getting full Magi-Ingot armour (Magical Armour) (name: "Magic?", description: "How come it's a lost art?")*, Getting full magi-steel armour (Pure Magic Armour) (name: "Pure Magic!", description: "Did that destroy the magicians too?")*
+- Advancements +0.0.1 per advancement - Getting full ancient armour (name: "The Ancients", description: "Our first lead")* // DONE, Getting full true ancient armour (name: "The TRUE Ancients", description: "Where did they go?")*, Getting full Magi-Ingot armour (Magical Armour) (name: "Magic?", description: "How come it's a lost art?")*, Getting full magi-steel armour (Pure Magic Armour) (name: "Pure Magic!", description: "Did that destroy the magicians too?")*
 - Dimension +0.0.5 per dimension - Asteroid Belt (Space themed)*, Shadow realm(Dimension of darkness, lots of mobs)
 - Loot tables for chests in structures +0.0.1 per loot table - all structures
 - Mobs +0.0.2 per mob - Shadow crawler
@@ -14,7 +14,7 @@
 - Recipes for stuff +0.0.2 per set (e.g full armour crafts = 0.0.2)
 - Other named +0.0.2 per - Infuser tick (takes time to infuse stuff basically)
 
-- +s to add: +0.0.6
+- +s to add: +0.0.0
 
 - unfinished for ver (sets)
 ~ Ores

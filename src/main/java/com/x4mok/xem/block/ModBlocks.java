@@ -1,10 +1,7 @@
 package com.x4mok.xem.block;
 
 import com.x4mok.xem.XEM;
-import com.x4mok.xem.block.custom.GhostPillarBlock;
-import com.x4mok.xem.block.custom.GrapeBlock;
-import com.x4mok.xem.block.custom.HiddenOpenableBlocks;
-import com.x4mok.xem.block.custom.InfuserBlock;
+import com.x4mok.xem.block.custom.*;
 import com.x4mok.xem.block.custom.trees.MahoganyTree;
 import com.x4mok.xem.item.ModItemGroup;
 import com.x4mok.xem.item.ModItems;
@@ -124,7 +121,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> HRSTEELSTAIRS = registerBlock("hrsteelstairs",
             () -> new StairsBlock(() -> ALUMINIUMBLOCK.get().defaultBlockState(), AbstractBlock.Properties.of(Material.METAL).harvestLevel(4).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ALLOYKILN = registerBlock("alloykiln",
-            () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestLevel(4).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
+            AlloyKilnBlock::new);
+    public static final RegistryObject<Block> ENDGRASS = registerBlock("endgrass",
+            () -> new Block(AbstractBlock.Properties.of(Material.STONE).harvestLevel(4).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5f)));
+
 
 
 

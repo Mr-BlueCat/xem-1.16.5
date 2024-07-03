@@ -11,7 +11,6 @@ import com.x4mok.xem.tileentity.ModTileEntities;
 import com.x4mok.xem.world.biome.ModBiomes;
 import com.x4mok.xem.world.gen.ModBiomeGeneration;
 import com.x4mok.xem.world.structure.ModStructures;
-import jdk.nashorn.internal.ir.annotations.Immutable;
 import net.minecraft.block.Block;
 import net.minecraft.block.WoodType;
 import net.minecraft.client.gui.ScreenManager;

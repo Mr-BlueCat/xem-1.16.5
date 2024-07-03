@@ -1,6 +1,7 @@
 package com.x4mok.xem.world.biome;
 
 import com.x4mok.xem.XEM;
+import com.x4mok.xem.block.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.ResourceLocation;
@@ -17,6 +18,13 @@ public class ModConfiguredSurfaceBuilders {
                     Blocks.GRASS.defaultBlockState(),
                     Blocks.DIRT.defaultBlockState(),
                     Blocks.DIRT.defaultBlockState()
+            )));
+
+    public static ConfiguredSurfaceBuilder<?> END_GRASSY_SURFACE = register("end_grassy_surface",
+            SurfaceBuilder.DEFAULT.configured(new SurfaceBuilderConfig(
+                    Blocks.END_STONE.defaultBlockState(), // CHANGE TO ENDGRASS
+                    Blocks.END_STONE.defaultBlockState(),
+                    Blocks.END_STONE.defaultBlockState()
             )));
 
 

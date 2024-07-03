@@ -23,7 +23,7 @@ public class ModContainers {
                         return new InfuserContainer(windowId, world, pos, inv, inv.player);
                     })));
 
-    public static final RegistryObject<ContainerType<InfuserContainer>> ALLOY_KILN_CONTAINER =
+    public static final RegistryObject<ContainerType<AlloyKilnContainer>> ALLOY_KILN_CONTAINER =
             CONTAINERS.register("alloy_kiln_container",
                     ()-> IForgeContainerType.create(((windowId, inv, data) -> {
                         BlockPos pos = data.readBlockPos();

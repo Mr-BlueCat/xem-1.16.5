@@ -1,11 +1,10 @@
 {
   "parent": "block/block",
   "textures": {
-    "particle": "xem:block/alloykilnside",
-    "bottom": "xem:block/alloykilnbottom",
-    "top": "xem:block/alloykilntop",
-    "side": "xem:block/alloykilnside",
-    "front": "xem:block/alloykilnfront"
+    "particle": "xem:block/endgrassside",
+    "bottom": "xem:block/endgrassbottom",
+    "top": "xem:block/endgrasstop",
+    "side": "xem:block/endgrassside"
   },
   "elements": [
     {
@@ -23,7 +22,7 @@
         },
         "north": {
           "uv": [0, 0, 16, 16],
-          "texture": "#front",
+          "texture": "#side",
           "cullface": "north"
         },
         "south": {
