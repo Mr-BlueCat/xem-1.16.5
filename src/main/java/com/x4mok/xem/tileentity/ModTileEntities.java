@@ -2,7 +2,6 @@ package com.x4mok.xem.tileentity;
 
 import com.x4mok.xem.XEM;
 import com.x4mok.xem.block.ModBlocks;
-import net.minecraft.block.Blocks;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
@@ -18,7 +17,7 @@ public class ModTileEntities {
             () -> (TileEntityType.Builder.of(InfuserTile::new, ModBlocks.INFUSER.get())).build(null));
 
     public static final RegistryObject<TileEntityType<AlloyKilnTile>> ALLOY_KILN = TILE_ENTITIES.register("alloy_kiln_tile",
-            () -> (TileEntityType.Builder.of(AlloyKilnTile::new, ModBlocks.ALLOYKILN.get())).build(null));
+            () -> (TileEntityType.Builder.of(AlloyKilnTile::new, ModBlocks.ALLOY_KILN.get())).build(null));
 
     public static void register(IEventBus eventBus) {
         TILE_ENTITIES.register(eventBus);

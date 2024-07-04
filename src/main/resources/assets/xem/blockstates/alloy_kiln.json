@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "xem:block/alloykiln"
+      "model": "xem:block/alloy_kiln"
     }
   }
 }

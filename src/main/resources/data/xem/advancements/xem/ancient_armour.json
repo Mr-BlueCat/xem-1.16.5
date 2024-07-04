@@ -1,38 +1,40 @@
 {
+  "parent": "minecraft:xem/root",
   "display": {
     "icon": {
-      "item": "xem:divinechestplate",
+      "item": "xem:ancientchestplate",
       "nbt": "{Damage:0}"
     },
     "title": {
-      "translate": "advancements.xem.divinearmour.title"
+      "translate": "advancements.xem.ancientarmour.title"
     },
     "description": {
-      "translate": "advancements.xem.divinearmour.description"
+      "translate": "advancements.xem.ancientarmour.description"
     },
     "frame": "challenge",
     "show_toast": true,
-    "announce_to_chat": true
+    "announce_to_chat": true,
+    "hidden": false
   },
   "rewards": {
     "experience": 1000
   },
   "criteria": {
-    "divine_armour": {
+    "ancient_armour": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "xem:divinehelmet"
+            "item": "xem:ancienthelmet"
           },
           {
-            "item": "xem:divinechestplate"
+            "item": "xem:ancientchestplate"
           },
           {
-            "item": "xem:divineleggings"
+            "item": "xem:ancientleggings"
           },
           {
-            "item": "xem:divineboots"
+            "item": "xem:ancientboots"
           }
         ]
       }
@@ -40,7 +42,7 @@
   },
   "requirements": [
     [
-      "divine_armour"
+      "ancient_armour"
     ]
   ]
 }

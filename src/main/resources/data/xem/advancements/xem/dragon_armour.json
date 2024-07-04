@@ -1,18 +1,20 @@
 {
+  "parent": "minecraft:xem/obtain_dragon_drops",
   "display": {
     "icon": {
-      "item": "xem:ancientchestplate",
+      "item": "xem:dragonchestplate",
       "nbt": "{Damage:0}"
     },
     "title": {
-      "translate": "advancements.xem.ancientarmour.title"
+      "translate": "advancements.xem.dragonarmour.title"
     },
     "description": {
-      "translate": "advancements.xem.ancientarmour.description"
+      "translate": "advancements.xem.dragonarmour.description"
     },
     "frame": "challenge",
     "show_toast": true,
-    "announce_to_chat": true
+    "announce_to_chat": true,
+    "hidden": false
   },
   "rewards": {
     "experience": 1000
@@ -23,16 +25,16 @@
       "conditions": {
         "items": [
           {
-            "item": "xem:ancienthelmet"
+            "item": "xem:dragonhelmet"
           },
           {
-            "item": "xem:ancientchestplate"
+            "item": "xem:dragonchestplate"
           },
           {
-            "item": "xem:ancientleggings"
+            "item": "xem:dragonleggings"
           },
           {
-            "item": "xem:ancientboots"
+            "item": "xem:dragonboots"
           }
         ]
       }

@@ -6,6 +6,7 @@ import com.x4mok.xem.container.ModContainers;
 import com.x4mok.xem.data.recipes.ModRecipeTypes;
 import com.x4mok.xem.events.DragonDrops;
 import com.x4mok.xem.item.ModItems;
+import com.x4mok.xem.screen.AlloyKilnScreen;
 import com.x4mok.xem.screen.InfuserScreen;
 import com.x4mok.xem.tileentity.ModTileEntities;
 import com.x4mok.xem.world.biome.ModBiomes;
@@ -91,6 +92,7 @@ public class XEM {
             RenderTypeLookup.setRenderLayer(ModBlocks.MAHOGANYSAPLING.get(), RenderType.cutout());
 
             ScreenManager.register(ModContainers.INFUSER_CONTAINER.get(), InfuserScreen::new);
+            ScreenManager.register(ModContainers.ALLOY_KILN_CONTAINER.get(), AlloyKilnScreen::new);
         });
     }
 

@@ -22,7 +22,7 @@ public class ModConfiguredSurfaceBuilders {
 
     public static ConfiguredSurfaceBuilder<?> END_GRASSY_SURFACE = register("end_grassy_surface",
             SurfaceBuilder.DEFAULT.configured(new SurfaceBuilderConfig(
-                    Blocks.END_STONE.defaultBlockState(), // CHANGE TO ENDGRASS
+                    ModBlocks.ENDGRASS.get().defaultBlockState(), // CHANGE TO ENDGRASS
                     Blocks.END_STONE.defaultBlockState(),
                     Blocks.END_STONE.defaultBlockState()
             )));

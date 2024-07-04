@@ -19,10 +19,17 @@ public class ModRecipeTypes {
     public static IRecipeType<InfuserRecipe> INFUSER_RECIPE
             = new InfuserRecipe.InfuserRecipeType();
 
+    public static final RegistryObject<AlloyKilnRecipe.Serializer> ALLOY_KILN_SERIALIZER
+            = RECIPE_SERIALIZER.register("alloying", AlloyKilnRecipe.Serializer::new);
+
+    public static IRecipeType<AlloyKilnRecipe> ALLOY_KILN_RECIPE
+            = new AlloyKilnRecipe.AlloyKilnRecipeType();
+
 
     public static void register(IEventBus eventBus) {
         RECIPE_SERIALIZER.register(eventBus);
 
         Registry.register(Registry.RECIPE_TYPE, InfuserRecipe.TYPE_ID, INFUSER_RECIPE);
+        Registry.register(Registry.RECIPE_TYPE, InfuserRecipe.TYPE_ID, ALLOY_KILN_RECIPE);
     }
 }

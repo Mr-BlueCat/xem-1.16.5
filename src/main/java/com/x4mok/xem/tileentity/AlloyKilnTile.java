@@ -1,5 +1,6 @@
 package com.x4mok.xem.tileentity;
 
+import com.x4mok.xem.data.recipes.AlloyKilnRecipe;
 import com.x4mok.xem.data.recipes.InfuserRecipe;
 import com.x4mok.xem.data.recipes.ModRecipeTypes;
 import net.minecraft.block.BlockState;
@@ -115,8 +116,8 @@ public class AlloyKilnTile extends TileEntity implements ITickableTileEntity{
             inv.setItem(i, itemHandler.getStackInSlot(i));
         }
 
-        Optional<InfuserRecipe> recipe = level.getRecipeManager()
-                .getRecipeFor(ModRecipeTypes.INFUSER_RECIPE, inv, level);
+        Optional<AlloyKilnRecipe> recipe = level.getRecipeManager()
+                .getRecipeFor(ModRecipeTypes.ALLOY_KILN_RECIPE, inv, level);
 
         recipe.ifPresent(iRecipe -> {
             ItemStack output = iRecipe.getResultItem();

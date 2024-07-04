@@ -157,6 +157,10 @@ public class ModItems {
             () -> new ArmorItem(ModArmourMaterial.ANCIENT, EquipmentSlotType.FEET, (new Item.Properties().tab(ModItemGroup.XEMTAB).rarity(Rarity.UNCOMMON))));
     public static final RegistryObject<Item> REFINEDNETHERITEINGOT = ITEMS.register("refinednetheriteingot",
             () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.COMMON)));
+    public static final RegistryObject<Item> ANCIENTSCALE = ITEMS.register("ancientscale",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> TRUEANCIENTSCALE = ITEMS.register("trueancientscale",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.XEMTAB).stacksTo(64).rarity(Rarity.UNCOMMON)));
 
 
 

@@ -46,7 +46,7 @@ public class AlloyKilnContainer extends Container {
     @Override
     public boolean isSynched(PlayerEntity player) {
         return stillValid(IWorldPosCallable.create(tileEntity.getLevel(), tileEntity.getBlockPos()),
-                player, ModBlocks.INFUSER.get());
+                player, ModBlocks.ALLOY_KILN.get());
     }
 
     private int addSlotRange(IItemHandler handler, int index, int x, int y, int amount, int dx) {
@@ -77,7 +77,7 @@ public class AlloyKilnContainer extends Container {
 
     @Override
     public boolean stillValid(PlayerEntity playerEntity) {
-        return stillValid(IWorldPosCallable.create(tileEntity.getLevel(), tileEntity.getBlockPos()), playerEntity, ModBlocks.INFUSER.get());
+        return stillValid(IWorldPosCallable.create(tileEntity.getLevel(), tileEntity.getBlockPos()), playerEntity, ModBlocks.ALLOY_KILN.get());
     }
 
     private static final int HOTBAR_SLOT_COUNT = 9;
@@ -89,7 +89,7 @@ public class AlloyKilnContainer extends Container {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 6;  // must match TileEntityInventoryBasic.NUMBER_OF_SLOTS
+    private static final int TE_INVENTORY_SLOT_COUNT = 4;  // must match TileEntityInventoryBasic.NUMBER_OF_SLOTS
 
     @Override
     public ItemStack quickMoveStack(PlayerEntity player, int index) {
